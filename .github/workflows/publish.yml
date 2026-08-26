@@ -14,6 +14,10 @@ on:
         description: "Also publish overdue posts"
         type: boolean
         default: false
+      date:
+        description: "Pretend today is this date (YYYY-MM-DD). Leave empty for today."
+        type: string
+        default: ""
 
 permissions:
   contents: write        # only to commit queue.json after a successful publish
@@ -26,7 +30,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: actions/setup-python@v5
         with:
@@ -43,10 +47,16 @@ jobs:
           FB_PAGE_ID:        ${{ secrets.FB_PAGE_ID }}
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           PAGES_BASE_URL:    ${{ vars.PAGES_BASE_URL }}
+          DRY_RUN:  ${{ github.event.inputs.dry_run }}
+          CATCH_UP: ${{ github.event.inputs.catch_up }}
+          ON_DATE:  ${{ github.event.inputs.date }}
         run: |
-          python -m engine.run \
-            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }} \
-            ${{ github.event.inputs.catch_up == 'true' && '--catch-up' || '' }}
+          ARGS=""
+          [ "$DRY_RUN"  = "true" ] && ARGS="$ARGS --dry-run"
+          [ "$CATCH_UP" = "true" ] && ARGS="$ARGS --catch-up"
+          [ -n "$ON_DATE" ]        && ARGS="$ARGS --date $ON_DATE"
+          echo "running: python -m engine.run $ARGS"
+          python -m engine.run $ARGS
 
       - name: Record what went out
         if: ${{ github.event.inputs.dry_run != 'true' }}
