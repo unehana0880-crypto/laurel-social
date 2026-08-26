@@ -1,0 +1,42 @@
+{% extends "kit/_kit_base.html" %}
+{% block pages %}
+<div class="page" data-document-role="page" data-label="Photo overlay — {{variant}}">
+  <div class="photo"></div>
+  <div class="scrim"></div>
+  <div class="body">
+    <div class="eyebrow">{{eyebrow}}</div>
+    <h1 class="headline">{{headline|safe}}</h1>
+    {% if sub %}<div class="sub">{{sub}}</div>{% endif %}
+  </div>
+  <div class="strip">
+    <div class="mark">Laurel Studio</div>
+    <div class="meta">{{meta|safe}}</div>
+  </div>
+</div>
+<style>
+  /* Replace .photo's background with the guest-facing photograph in Canva.
+     Everything below is sized so type stays legible over a mid-tone image. */
+  .photo{position:absolute;inset:0;
+    background:
+      linear-gradient(148deg,#3A3730 0%,#26241F 42%,#161513 100%);}
+  .photo::after{content:'REPLACE WITH PHOTOGRAPH';position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);font-family:'Inter',sans-serif;font-size:22px;
+    letter-spacing:.34em;color:rgba(240,235,225,.20)}
+  .scrim{position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(20,19,17,.62) 0%,rgba(20,19,17,.14) 34%,
+      rgba(20,19,17,.58) 72%,rgba(20,19,17,.88) 100%)}
+  .body{position:absolute;left:96px;right:96px;bottom:230px}
+  .eyebrow{font-size:19px}
+  .headline{font-size:{{h1}}px;color:#F4F1EA;margin-top:30px;
+    text-shadow:0 2px 24px rgba(0,0,0,.42);max-width:820px}
+  .sub{font-family:'Inter',sans-serif;font-weight:300;font-size:25px;line-height:1.55;
+    color:rgba(244,241,234,.84);margin-top:26px;max-width:720px;
+    text-shadow:0 2px 18px rgba(0,0,0,.4)}
+  .strip{position:absolute;left:96px;right:96px;bottom:88px;
+    display:flex;align-items:flex-end;justify-content:space-between;
+    padding-top:26px;border-top:1px solid rgba(240,235,225,.26)}
+  .mark{font-size:23px}
+  .meta{font-family:'Cinzel',serif;font-size:18px;letter-spacing:.16em;
+    text-transform:uppercase;color:rgba(240,235,225,.62);text-align:right}
+</style>
+{% endblock %}

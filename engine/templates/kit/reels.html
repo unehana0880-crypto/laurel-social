@@ -1,0 +1,41 @@
+{% extends "kit/_kit_base.html" %}
+{% block pages %}
+<div class="page" data-document-role="page" data-label="Reels cover — {{variant}}">
+  <div class="photo"></div>
+  <div class="scrim"></div>
+  <div class="safe">
+    <div class="top"><div class="eyebrow">{{eyebrow}}</div></div>
+    <div class="mid">
+      <h1 class="headline">{{headline|safe}}</h1>
+      <div class="rule"></div>
+      {% if sub %}<div class="sub">{{sub}}</div>{% endif %}
+    </div>
+    <div class="bot"><div class="mark">Laurel Studio</div><div class="handle">{{handle}}</div></div>
+  </div>
+  <div class="grid-crop"></div>
+</div>
+<style>
+  .photo{position:absolute;inset:0;background:linear-gradient(160deg,#38352E,#1B1A17 60%,#121110)}
+  .photo::after{content:'REPLACE WITH PHOTOGRAPH';position:absolute;top:22%;left:50%;
+    transform:translateX(-50%);font-size:20px;letter-spacing:.32em;color:rgba(240,235,225,.18)}
+  .scrim{position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(18,17,16,.55) 0%,rgba(18,17,16,.10) 30%,
+      rgba(18,17,16,.62) 74%,rgba(18,17,16,.92) 100%)}
+  /* Instagram crops reels covers to a 1:1 centre for the grid thumbnail.
+     Everything important is kept inside .mid, which sits in that square. */
+  .grid-crop{position:absolute;left:0;right:0;top:420px;height:1080px;
+    border:1px dashed rgba(157,174,150,.34);pointer-events:none}
+  .grid-crop::after{content:'GRID CROP · 1:1';position:absolute;top:14px;left:18px;
+    font-family:'Inter',sans-serif;font-size:17px;letter-spacing:.24em;color:rgba(157,174,150,.62)}
+  .safe{position:absolute;inset:0;padding:170px 96px 190px;
+    display:flex;flex-direction:column;justify-content:space-between}
+  .eyebrow{font-size:19px}
+  .mid{padding-bottom:60px}
+  .headline{font-size:{{h1}}px;color:#F4F1EA;max-width:860px;text-shadow:0 2px 26px rgba(0,0,0,.45)}
+  .rule{width:104px;height:1px;background:linear-gradient(90deg,var(--accent),transparent);margin:40px 0}
+  .sub{font-family:'Inter',sans-serif;font-weight:300;font-size:28px;line-height:1.5;
+    color:rgba(244,241,234,.86);max-width:760px}
+  .bot .mark{font-size:24px}
+  .handle{font-size:20px;letter-spacing:.14em;color:rgba(240,235,225,.55);margin-top:12px}
+</style>
+{% endblock %}

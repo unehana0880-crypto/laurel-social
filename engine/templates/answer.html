@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block core %}
+  <h1>{{title}}</h1>
+  <div class="rule"></div>
+  <div class="lede">{{lede}}</div>
+  {% if facts %}
+  <ul class="facts">
+    {% for f in facts %}<li><b>✦</b><span>{{f}}</span></li>{% endfor %}
+  </ul>
+  {% endif %}
+{% endblock %}

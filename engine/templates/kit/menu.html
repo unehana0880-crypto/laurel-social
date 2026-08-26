@@ -1,0 +1,81 @@
+{% extends "kit/_kit_base.html" %}
+{% block pages %}
+<div class="page menu" data-document-role="page" data-label="Menu — programs and pricing">
+  <div class="frame"></div>
+  <header>
+    <div class="eyebrow">Laurel Studio</div>
+    <h1>Find your care</h1>
+    <div class="tag">{{tagline}}</div>
+    <div class="where">{{where}}</div>
+  </header>
+
+  <div class="rows">
+    {% for s in services %}
+    <section class="row">
+      <div class="num">{{s.code}}</div>
+      <div class="col">
+        <h2>{{s.name}}</h2>
+        <div class="ko">{{s.name_ko}}</div>
+        <div class="sum">{{s.summary}}</div>
+        <ul>{% for i in s.includes %}<li>{{i}}</li>{% endfor %}</ul>
+        <div class="best">{{s.best_for}}</div>
+      </div>
+      <div class="pr">
+        <div class="usd">${{s.price_usd}}</div>
+        <div class="krw">₩{{'{:,}'.format(s.price_krw)}}</div>
+        <div class="min">{{s.duration_min}} min</div>
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+
+  <div class="note">{{note}}</div>
+
+  <footer>
+    <div><div class="mark">Laurel Studio</div><div class="handle">{{handle}}</div></div>
+    <div class="right">{{hours}}<br><span>{{station}}</span></div>
+  </footer>
+</div>
+<style>
+  .menu{padding:74px 72px 62px;display:flex;flex-direction:column}
+  .frame{position:absolute;inset:38px;border:1px solid var(--hair);pointer-events:none}
+  header{position:relative;z-index:1}
+  .eyebrow{font-size:19px}
+  h1{font-size:70px;margin-top:18px;color:var(--type)}
+  .tag{font-family:'Cormorant',serif;font-style:italic;font-size:25px;
+    color:var(--accent);margin-top:11px}
+  .where{font-size:15px;letter-spacing:.1em;color:var(--faint);margin-top:14px;text-transform:uppercase}
+
+  .rows{position:relative;z-index:1;margin-top:30px;flex:1}
+  .row{display:flex;gap:26px;padding:26px 0;border-top:1px solid var(--hair-soft)}
+  .row:last-child{border-bottom:1px solid var(--hair-soft)}
+  .num{font-family:'Cinzel',serif;font-size:17px;color:var(--oak);letter-spacing:.2em;
+    flex:none;width:34px;padding-top:9px}
+  .col{flex:1}
+  h2{font-size:38px;color:var(--type)}
+  .ko{font-size:16px;color:var(--faint);margin-top:7px;letter-spacing:.04em}
+  .sum{font-size:18px;font-weight:300;line-height:1.5;color:var(--dim);margin-top:13px;max-width:620px}
+  ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px}
+  li{font-size:17px;font-weight:300;color:var(--type);padding-left:21px;position:relative;line-height:1.42}
+  li::before{content:'✦';position:absolute;left:0;top:1px;font-size:12px;color:var(--accent)}
+  .best{font-family:'Cormorant',serif;font-style:italic;font-size:20px;
+    color:var(--accent-lt);margin-top:14px}
+  .pr{flex:none;text-align:right;padding-top:6px;width:170px}
+  .usd{font-family:'Cormorant',serif;font-size:48px;color:var(--accent);line-height:1}
+  .krw{font-size:17px;color:var(--oak);margin-top:7px}
+  .min{font-family:'Cinzel',serif;font-size:14px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--faint);margin-top:12px}
+
+  .note{position:relative;z-index:1;margin-top:24px;padding:18px 22px;
+    border-left:1px solid var(--oak);background:var(--raised);
+    font-family:'Cormorant',serif;font-size:20px;line-height:1.45;color:var(--dim)}
+
+  footer{position:relative;z-index:1;margin-top:auto;padding-top:26px;
+    display:flex;align-items:flex-end;justify-content:space-between}
+  .mark{font-size:20px}
+  .handle{font-size:15px;letter-spacing:.14em;color:var(--faint);margin-top:8px}
+  .right{font-family:'Cinzel',serif;font-size:15px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent);text-align:right;line-height:1.9}
+  .right span{color:var(--faint)}
+</style>
+{% endblock %}

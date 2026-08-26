@@ -19,7 +19,7 @@ import os, time, json, argparse
 from pathlib import Path
 import urllib.request, urllib.parse, urllib.error
 
-GRAPH_VERSION = os.environ.get("GRAPH_VERSION", "v23.0")
+GRAPH_VERSION = os.environ.get("GRAPH_VERSION", "v21.0")
 BASE = f"https://graph.facebook.com/{GRAPH_VERSION}"
 
 

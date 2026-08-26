@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block core %}
+  <div class="quote">
+    <h1>{{title}}</h1>
+    <div class="rule"></div>
+    <div class="lede">{{lede}}</div>
+    {% if sub %}<div class="sub">{{sub}}</div>{% endif %}
+  </div>
+{% endblock %}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:'Cinzel';src:url('{{fonts}}/cinzel-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:block}
+  @font-face{font-family:'Cinzel';src:url('{{fonts}}/cinzel-latin-600-normal.woff2')format('woff2');font-weight:600;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('{{fonts}}/cormorant-garamond-latin-300-normal.woff2')format('woff2');font-weight:300;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('{{fonts}}/cormorant-garamond-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('{{fonts}}/cormorant-garamond-latin-300-italic.woff2')format('woff2');font-weight:300;font-style:italic;font-display:block}
+  @font-face{font-family:'Inter';src:url('{{fonts}}/inter-latin-300-normal.woff2')format('woff2');font-weight:300;font-display:block}
+  @font-face{font-family:'Inter';src:url('{{fonts}}/inter-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:block}
+
+  :root{
+    --ink:{{p.ink}}; --ink-raised:{{p.ink_raised}}; --ink-card:{{p.ink_card}};
+    --hair:{{p.hairline}}; --hair-soft:{{p.hairline_soft}};
+    --ivory:{{p.ivory}}; --dim:{{p.ivory_dim}}; --faint:{{p.ivory_faint}};
+    --gold:{{p.gold}}; --gold-lt:{{p.gold_light}}; --gold-dp:{{p.gold_deep}};
+    --pad:{{margin}}px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:{{W}}px;height:{{H}}px}
+  body{
+    background:var(--ink); color:var(--ivory);
+    font-family:'Inter',sans-serif; -webkit-font-smoothing:antialiased;
+    position:relative; overflow:hidden;
+  }
+
+  /* ---- ground: diffused light wash + woven texture + edge vignette ---- */
+  .ground{position:absolute;inset:0;z-index:0}
+  /* soft diffused light entering from the upper left, per brand brief */
+  .ground::before{content:'';position:absolute;inset:0;
+    background:
+      radial-gradient(105% 78% at 14% -12%, {{p.wash}} 0%, transparent 62%),
+      radial-gradient(80% 60% at 88% 112%, {{p.wash2}} 0%, transparent 62%),
+      radial-gradient(148% 116% at 50% 46%, transparent 46%, {{p.vignette}} 100%);}
+  .ground::after{content:'';position:absolute;inset:0;opacity:.6;
+    background-image:
+      repeating-linear-gradient(45deg, {{p.texture}} 0 1px, transparent 1px 14px),
+      repeating-linear-gradient(-45deg, {{p.texture}} 0 1px, transparent 1px 14px);}
+
+  /* ---- inset frame ---- */
+  .frame{position:absolute;inset:calc(var(--pad) * .62);border:1px solid var(--hair);z-index:1;pointer-events:none}
+  .frame::before,.frame::after{content:'';position:absolute;width:26px;height:26px;border:1px solid var(--gold);opacity:.65}
+  .frame::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+  .frame::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+
+  /* ---- botanical corner ornaments ---- */
+  .orn{position:absolute;z-index:1;opacity:{{orn_opacity}};pointer-events:none}
+  .orn.tr{top:calc(var(--pad) * .42);right:calc(var(--pad) * .42);width:330px}
+  .orn.br{bottom:calc(var(--pad) * .42);right:calc(var(--pad) * .42);width:220px;
+    transform:scaleY(-1);opacity:calc({{orn_opacity}} * .62)}
+
+  /* ---- layout ---- */
+  .sheet{position:relative;z-index:2;height:100%;
+    padding:var(--pad) var(--pad) calc(var(--pad) * 1.15);
+    display:flex;flex-direction:column;justify-content:space-between}
+
+  .eyebrow{font-family:'Cinzel',serif;font-weight:600;font-size:20px;
+    letter-spacing:.42em;text-transform:uppercase;color:var(--gold);}
+  .eyebrow .thin{color:var(--faint);letter-spacing:.3em}
+
+  .core{display:flex;flex-direction:column;justify-content:center;flex:1;padding:38px 0}
+
+  h1{font-family:'Cormorant',serif;font-weight:300;color:var(--ivory);
+    font-size:{{h1}}px;line-height:1.1;letter-spacing:-.005em;}
+  h1 em{font-style:italic;color:var(--gold-lt)}
+
+  .rule{width:104px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:38px 0}
+
+  .lede{font-family:'Inter',sans-serif;font-weight:300;font-size:{{lede_px}}px;
+    line-height:1.62;color:var(--dim);max-width:{{measure}}px;letter-spacing:.004em}
+
+  .facts{list-style:none;margin-top:44px;display:flex;flex-direction:column;gap:19px;
+    max-width:{{measure}}px}
+  .facts li{display:flex;gap:18px;align-items:baseline;
+    font-size:25px;font-weight:300;color:var(--ivory);line-height:1.44}
+  .facts li b{color:var(--gold);font-weight:400;font-size:19px;flex:none;line-height:1}
+
+  /* ---- offer price line ---- */
+  .price{display:flex;align-items:baseline;gap:22px;margin-top:34px;flex-wrap:wrap}
+  .price .n{order:1} .price .u{order:2} .price .krw{order:3;flex-basis:100%}
+  .price .n{font-family:'Cormorant',serif;font-weight:400;font-size:78px;
+    color:var(--gold);line-height:1}
+  .price .u{font-family:'Cinzel',serif;font-size:21px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--faint)}
+  .price .krw{font-family:'Inter',sans-serif;font-size:20px;
+    letter-spacing:.04em;text-transform:none;color:var(--ivory-faint,var(--faint));margin-top:10px}
+
+  /* ---- expectation-setting note: never decorative, never trimmed ---- */
+  .note{margin-top:40px;padding:20px 24px;border-left:1px solid var(--gold-dp);
+    background:var(--ink-raised);max-width:{{measure}}px;
+    font-size:21px;font-weight:300;line-height:1.5;color:var(--dim);
+    font-family:'Cormorant',serif}
+
+  .foot{display:flex;align-items:flex-end;justify-content:space-between}
+  .mark{font-family:'Cinzel',serif;font-weight:600;font-size:24px;
+    letter-spacing:.36em;text-transform:uppercase;color:var(--ivory)}
+  .handle{font-size:19px;color:var(--faint);letter-spacing:.14em;margin-top:10px}
+  .foot-r{text-align:right;font-size:19px;color:var(--gold);letter-spacing:.14em;
+    font-family:'Cinzel',serif;font-weight:400;text-transform:uppercase}
+
+  /* ---- price rows ---- */
+  .rows{display:flex;flex-direction:column;gap:0;margin-top:12px}
+  .row{display:flex;align-items:baseline;gap:26px;padding:34px 0;border-bottom:1px solid var(--hair-soft)}
+  .row:first-child{border-top:1px solid var(--hair-soft)}
+  .row .code{font-family:'Cinzel',serif;font-size:19px;color:var(--gold-dp);letter-spacing:.2em;flex:none;width:44px}
+  .row .nm{flex:1}
+  .row .nm .t{font-family:'Cormorant',serif;font-weight:400;font-size:44px;line-height:1.16;color:var(--ivory)}
+  .row .nm .d{font-size:20px;color:var(--faint);letter-spacing:.1em;margin-top:9px;text-transform:uppercase}
+  .row .pr{font-family:'Cormorant',serif;font-weight:400;font-size:50px;color:var(--gold);
+    flex:none;text-align:right;line-height:1}
+  .row .pr span{display:block;font-family:'Inter',sans-serif;font-size:17px;
+    color:var(--gold-dp);margin-top:8px;letter-spacing:.03em}
+
+  /* ---- big pull quote ---- */
+  .quote h1{font-size:{{quote}}px;line-height:1.16}
+  .sub{font-family:'Cinzel',serif;font-size:20px;letter-spacing:.32em;
+    text-transform:uppercase;color:var(--gold-dp);margin-top:44px}
+</style></head>
+<body>
+  <div class="ground"></div>
+  <div class="frame"></div>
+
+  <svg class="orn tr" viewBox="0 0 400 400" fill="none" stroke="{{p.gold}}" stroke-width="1.4">
+    <path d="M392 8C300 40 236 96 196 176c-30 60-44 124-40 196"/>
+    <path d="M300 44c-6 34 4 62 28 82M300 44c26 12 52 8 78-10"/>
+    <path d="M244 118c-10 32-4 62 16 86M244 118c28 6 54-4 76-26"/>
+    <path d="M196 206c-14 30-14 60 2 88M196 206c28 2 52-12 70-38"/>
+    <path d="M164 306c-16 26-20 54-10 82M164 306c26-2 48-18 62-44"/>
+    <ellipse cx="330" cy="70" rx="20" ry="9" transform="rotate(-38 330 70)"/>
+    <ellipse cx="272" cy="146" rx="19" ry="8" transform="rotate(-34 272 146)"/>
+    <ellipse cx="222" cy="240" rx="18" ry="8" transform="rotate(-30 222 240)"/>
+  </svg>
+  <svg class="orn br" viewBox="0 0 400 400" fill="none" stroke="{{p.gold}}" stroke-width="1.6">
+    <path d="M392 8C300 40 236 96 196 176c-30 60-44 124-40 196"/>
+    <path d="M300 44c-6 34 4 62 28 82M300 44c26 12 52 8 78-10"/>
+    <path d="M244 118c-10 32-4 62 16 86M244 118c28 6 54-4 76-26"/>
+    <ellipse cx="330" cy="70" rx="20" ry="9" transform="rotate(-38 330 70)"/>
+    <ellipse cx="272" cy="146" rx="19" ry="8" transform="rotate(-34 272 146)"/>
+  </svg>
+
+  <div class="sheet">
+    <div class="eyebrow">{{eyebrow|safe}}</div>
+    <div class="core {{extra_class}}">
+      {% block core %}{% endblock %}
+    </div>
+    <div class="foot">
+      <div>
+        <div class="mark">{{brand_name}}</div>
+        <div class="handle">{{handle}}</div>
+      </div>
+      <div class="foot-r">{{foot_right|safe}}</div>
+    </div>
+  </div>
+</body></html>

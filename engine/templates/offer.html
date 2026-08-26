@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block core %}
+  <h1>{{title}}</h1>
+  {% if price %}
+  <div class="price">
+    <div class="n">${{price}}</div>
+    <div class="u">{{duration}} min</div>
+    <div class="krw">{{price_krw}}</div>
+  </div>
+  {% endif %}
+  <div class="rule"></div>
+  {% if lede %}<div class="lede">{{lede}}</div>{% endif %}
+  {% if rows %}
+  <div class="rows">
+    {% for r in rows %}
+    <div class="row">
+      <div class="code">{{r.code}}</div>
+      <div class="nm"><div class="t">{{r.name}}</div><div class="d">{{r.duration_min}} minutes</div></div>
+      <div class="pr">${{r.price_usd}}<span>₩{{'{:,}'.format(r.price_krw)}}</span></div>
+    </div>
+    {% endfor %}
+  </div>
+  {% elif facts %}
+  <ul class="facts">
+    {% for f in facts %}<li><b>✦</b><span>{{f}}</span></li>{% endfor %}
+  </ul>
+  {% endif %}
+  {% if note %}<div class="note">{{note}}</div>{% endif %}
+{% endblock %}
