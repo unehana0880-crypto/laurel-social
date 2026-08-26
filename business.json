@@ -1,0 +1,232 @@
+{
+  "_README": "Single source of truth for every fact that appears in a caption, an image, or the JSON-LD schema. Answer engines reward EXACT string consistency across Instagram, Facebook, Google Business Profile, Naver and the booking site. Change a fact here, never in a caption.",
+  "entity": {
+    "name": "Laurel Studio",
+    "name_ko": "로렐스튜디오",
+    "legal_name": "Laurel Studio",
+    "alternate_names": [
+      "Laurel Studio Seoul",
+      "로렐스튜디오",
+      "aesthetic_laurel"
+    ],
+    "type": "HealthAndBeautyBusiness",
+    "tagline": "Where ancient earth meets modern skincare science.",
+    "positioning": "Personalized K-beauty skincare studio — a studio, not a spa",
+    "one_line_definition": "Laurel Studio is a personalized K-beauty skincare studio in Hongdae, Seoul, founded by Hana Kim, a former cosmetics ingredient researcher. Guests receive a skin assessment and care matched to their skin on the day, on a traditional Ondol floor in a maru space.",
+    "founded": "",
+    "differentiator_in_one_line": "Not the treatment. The diagnosis."
+  },
+  "location": {
+    "_note": "Publicly published: district, neighbourhood, street address, floor, nearest station. This is the entity anchor — do not remove it from any profile.",
+    "street_address_en": "7 World Cup buk-ro, Mapo-gu, Seoul",
+    "street_address_ko": "서울 마포구 월드컵북로 7",
+    "floor": "3F",
+    "city": "Seoul",
+    "district": "Mapo-gu",
+    "neighborhood_public": "Hongdae",
+    "neighborhood_ko": "홍대",
+    "nearest_station": "Hongik University Station Exit 1 (Line 2 · AREX · Gyeongui–Jungang)",
+    "nearest_station_ko": "홍대입구역",
+    "country": "South Korea",
+    "postal_code": "",
+    "street_address_private": false,
+    "taxi_card_line_ko": "로렐스튜디오 · 마포구 월드컵북로 7",
+    "latitude": null,
+    "longitude": null,
+    "_latlng_note": "Fill from Google Maps once the listing exists — right-click the pin, copy coordinates. Needed for the geo block in aeo/schema.jsonld.",
+    "walk_time": "3 minutes on foot"
+  },
+  "contact": {
+    "instagram": "https://www.instagram.com/aesthetic_laurel/",
+    "instagram_handle": "@aesthetic_laurel",
+    "facebook_page": "",
+    "website": "",
+    "booking_primary": "our booking site",
+    "booking_url": "",
+    "booking_channels": [
+      "Booking site",
+      "WhatsApp",
+      "Instagram DM",
+      "Telegram"
+    ],
+    "whatsapp": "",
+    "telegram": "",
+    "email": "",
+    "google_maps_url": "",
+    "naver_place_url": "",
+    "dm_ok": true,
+    "_note": "Empty strings are optional — the pipeline only blocks on TODO_ values. Fill booking_url and facebook_page before go-live; the rest improve schema completeness."
+  },
+  "operations": {
+    "languages_spoken": [
+      "English",
+      "Korean"
+    ],
+    "consultation_language": "English",
+    "hours": "10:00–19:00 daily",
+    "opens": "10:00",
+    "closes": "19:00",
+    "slot_cadence": "Treatments start on the hour",
+    "same_day_booking": true,
+    "booking_lead_time": "Same-day booking is possible; specific hours fill first",
+    "payment_methods": [
+      "Card",
+      "Cash",
+      "Bank transfer"
+    ],
+    "currency_displayed": "USD with KRW",
+    "usd_krw_note": "KRW is the charged amount; USD figures are the published equivalents.",
+    "walk_ins": false,
+    "walk_in_policy": "If the door is closed, message us — we may be momentarily out and will return shortly.",
+    "solo_traveller_friendly": true,
+    "couples_friendly": true
+  },
+  "services": [
+    {
+      "id": "signature",
+      "code": "1",
+      "name": "Signature Custom Facial",
+      "name_ko": "시그니쳐 커스텀 페이셜",
+      "duration_min": 50,
+      "price_usd": 54,
+      "price_krw": 83000,
+      "focus": "Face",
+      "summary": "The essential custom facial — cleansing and layering matched to your skin on the day, never a fixed menu.",
+      "includes": [
+        "Skin assessment before anything is applied",
+        "Cleansing and light exfoliation matched to your barrier",
+        "Hydrating gel mask",
+        "Moisturizing cream for glow and barrier care"
+      ],
+      "best_for": "A first visit, and a clean reset."
+    },
+    {
+      "id": "premium",
+      "code": "2",
+      "name": "Premium Custom Care + Skin Report",
+      "name_ko": "프리미엄 커스텀 케어 + 스킨 리포트",
+      "duration_min": 60,
+      "price_usd": 73,
+      "price_krw": 110000,
+      "focus": "Face — advanced",
+      "summary": "The full custom facial, plus a written skin report — your skin type, what your barrier is doing, and which products to use and skip.",
+      "includes": [
+        "Full skin assessment and written Skin Report",
+        "Deep cleansing and gentle exfoliation",
+        "Personalized ampoule and premium mask",
+        "Extended facial massage for skin and mind balance",
+        "Product guidance by email, including what not to buy"
+      ],
+      "best_for": "Guests who want to leave Seoul knowing what their skin actually needs.",
+      "unique": "The only program that includes the written Skin Report and product guidance."
+    },
+    {
+      "id": "body",
+      "code": "3",
+      "name": "Décolleté & Body Care",
+      "name_ko": "데콜테 & 바디 케어",
+      "duration_min": 90,
+      "price_usd": 110,
+      "price_krw": 165000,
+      "focus": "Body + Face",
+      "summary": "Décolleté, shoulders and face cared for by hand, while a spinal-care device works along the back.",
+      "includes": [
+        "Spinal-care device works along the back",
+        "Décolleté and shoulder care by your therapist",
+        "Sheet mask of your choice",
+        "Full Signature Custom Facial included"
+      ],
+      "best_for": "Long flights and heavy walking days — body relief alongside the facial.",
+      "important_disclaimer": "This is not a full-body massage. A spinal-care device — a warm heated bed — works along the back, while your therapist focuses on décolleté, shoulders and face.",
+      "_disclaimer_note": "This line must appear in every caption, card and schema entry for this service. Mis-set expectations are the fastest route to a bad review."
+    }
+  ],
+  "differentiators": [
+    "Founded by Hana Kim, a former cosmetics ingredient researcher with a master's in bioengineering.",
+    "Care is matched to your skin on the day — there is no fixed treatment menu.",
+    "Guests leave knowing which Korean products suit them and which to skip.",
+    "Consultation and treatment are delivered in English, start to finish.",
+    "8,000+ recorded skin consultations, guests from 50+ countries.",
+    "Three minutes from Hongik University Station Exit 1."
+  ],
+  "audience": {
+    "primary": "International visitors to Seoul booking a personalized K-beauty assessment, from 50+ countries",
+    "secondary": "Long-stay expats in the Hongdae and Yeonnam area",
+    "top_source_markets": [
+      "United States",
+      "Singapore",
+      "Japan",
+      "Australia",
+      "United Kingdom"
+    ]
+  },
+  "compliance": {
+    "_note": "Skincare, not medical. These words stay out of every caption.",
+    "banned_claims": [
+      "anti-aging guaranteed",
+      "blocks 100%",
+      "chemical-free",
+      "clinical results",
+      "cure",
+      "full-body massage",
+      "heal",
+      "lymphatic drainage therapy",
+      "medical treatment",
+      "permanent",
+      "reflects UV",
+      "removes wrinkles",
+      "toxin-free",
+      "treat acne",
+      "whitening"
+    ],
+    "safe_framings": [
+      "supports the skin barrier",
+      "designed for",
+      "guests often describe",
+      "a calming ritual",
+      "hydration-focused",
+      "personalized to your skin on the day",
+      "care along the spine line",
+      "décolleté and shoulder drainage"
+    ],
+    "ai_disclosure_required": true,
+    "ai_disclosure_line": "Image created with AI.",
+    "evidence_rule": "Every mechanistic claim must trace to primary literature. Cite the limitation alongside the finding."
+  },
+  "founder": {
+    "name": "Hana Kim",
+    "role": "Founder and lead esthetician",
+    "credentials": [
+      "Former cosmetics ingredient researcher",
+      "Master's in bioengineering, Kumamoto University",
+      "Former executive at a global cosmetics company"
+    ],
+    "why_it_matters": "The assessment is read by someone who formulated ingredients before she applied them. That is the positioning — expertise in diagnosis, not a treatment menu.",
+    "_aeo_note": "Named, credentialed expertise is the single strongest E-E-A-T signal a studio this size can own. Hana Kim should appear by name in the bio, on the site, in the schema, and in roughly one post a month."
+  },
+  "proof": {
+    "google_rating": 5.0,
+    "google_review_count": "200+",
+    "recorded_consultations": "8,000+",
+    "guest_countries": "50+",
+    "_note": "Use exactly as written. Never round up, never write review text on a guest's behalf. Update the counts here when they move; captions read from this file."
+  },
+  "space": {
+    "floor": "Traditional Ondol floor",
+    "room": "Maru space",
+    "attire": "Therapists wear hanbok",
+    "_language_rule": "Refer to the floor only as 'Ondol Floor' or 'Traditional Ondol'. Temperature descriptors are banned brand-wide — see brand.json voice.banned_words."
+  },
+  "core_belief": {
+    "headline": "Barrier first. Repair before actives.",
+    "principles": [
+      "We assess what your skin can currently tolerate before recommending anything.",
+      "We routinely tell guests what not to buy.",
+      "We recommend from Olive Young, Daiso and pharmacies — not only what we sell.",
+      "Fewer products is more reliably protective than better products.",
+      "'Natural' is not a guarantee of safety.",
+      "An ingredient list is not complete information."
+    ],
+    "stance": "We are the opposite of the ten-step routine."
+  }
+}

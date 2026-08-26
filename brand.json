@@ -1,0 +1,186 @@
+{
+  "_README": "Visual + voice system. The renderer reads colors/type from active_palette; the copy engine reads voice and banned_words. Nothing in the pipeline hardcodes a hex value.",
+  "active_palette": "natural",
+  "_palette_note": "The brief's muted natural palette, with deep charcoal used as a real surface rather than only as type colour. 'natural' is a two-surface system: charcoal ground for Answer and Offer, warm ivory for Ritual. That gives the grid a 2:1 dark-to-light rhythm — close to the existing feed's weight, but in the brief's palette instead of gold. Set active_palette to 'daylight' for all-ivory, or 'obsidian' for the original black-and-gold.",
+  "palettes": {
+    "daylight": {
+      "ink": "#F4F0E8",
+      "ink_raised": "#EFE9DD",
+      "ink_card": "#F8F5EF",
+      "hairline": "rgba(45,44,40,0.20)",
+      "hairline_soft": "rgba(45,44,40,0.11)",
+      "ivory": "#2D2C28",
+      "ivory_dim": "#55534B",
+      "ivory_faint": "#8A857A",
+      "gold": "#93A38D",
+      "gold_light": "#6F8069",
+      "gold_deep": "#B3A184",
+      "_note": "Token names are inherited from the original build and now read inverted: 'ink' is the ground (warm ivory), 'ivory' is the type (deep charcoal), 'gold' is the accent (soft sage), 'gold_deep' is the secondary accent (pale oak). Renaming them would break nothing but is not worth the churn.",
+      "wash": "rgba(147,163,141,0.13)",
+      "wash2": "rgba(179,161,132,0.14)",
+      "vignette": "rgba(150,134,110,0.17)",
+      "texture": "rgba(45,44,40,0.022)"
+    },
+    "obsidian": {
+      "ink": "#0A0A0A",
+      "ink_raised": "#141311",
+      "ink_card": "#1A1815",
+      "hairline": "rgba(201, 169, 106, 0.28)",
+      "hairline_soft": "rgba(242, 237, 228, 0.10)",
+      "ivory": "#F2EDE4",
+      "ivory_dim": "#BDB6A9",
+      "ivory_faint": "#7C766C",
+      "gold": "#C9A96A",
+      "gold_light": "#E3CDA0",
+      "gold_deep": "#8C7343",
+      "wash": "rgba(201,169,106,0.13)",
+      "wash2": "rgba(201,169,106,0.07)",
+      "vignette": "rgba(0,0,0,0.72)",
+      "texture": "rgba(242,237,228,0.016)"
+    },
+    "natural": {
+      "_note": "Two surfaces, one accent family. Sage and oak shift value between surfaces so contrast holds on both.",
+      "dark": {
+        "ink": "#1E1D1A",
+        "ink_raised": "#26241F",
+        "ink_card": "#2B2924",
+        "hairline": "rgba(151,168,145,0.30)",
+        "hairline_soft": "rgba(240,235,225,0.13)",
+        "ivory": "#F0EBE1",
+        "ivory_dim": "#B4AD9F",
+        "ivory_faint": "#837D71",
+        "gold": "#9DAE96",
+        "gold_light": "#BCC9B6",
+        "gold_deep": "#B3A184",
+        "wash": "rgba(151,168,145,0.11)",
+        "wash2": "rgba(179,161,132,0.09)",
+        "vignette": "rgba(0,0,0,0.50)",
+        "texture": "rgba(240,235,225,0.018)"
+      },
+      "light": {
+        "ink": "#F4F0E8",
+        "ink_raised": "#EDE7DB",
+        "ink_card": "#FAF8F3",
+        "hairline": "rgba(45,44,40,0.20)",
+        "hairline_soft": "rgba(45,44,40,0.11)",
+        "ivory": "#2D2C28",
+        "ivory_dim": "#55534B",
+        "ivory_faint": "#8A857A",
+        "gold": "#6F8069",
+        "gold_light": "#55654F",
+        "gold_deep": "#A8946F",
+        "wash": "rgba(147,163,141,0.13)",
+        "wash2": "rgba(179,161,132,0.14)",
+        "vignette": "rgba(150,134,110,0.17)",
+        "texture": "rgba(45,44,40,0.022)"
+      }
+    }
+  },
+  "type": {
+    "display": "Cinzel",
+    "display_note": "Eyebrows and package numerals only. ALL CAPS, wide tracking, never below 20px.",
+    "headline": "Cormorant Garamond",
+    "headline_note": "Questions and statements. Light weight, generous leading, sentence case. Serif throughout, per brief.",
+    "body": "Inter",
+    "body_note": "Supporting detail only. 300/400 weight, never bold."
+  },
+  "canvas": {
+    "feed": {
+      "w": 1080,
+      "h": 1350,
+      "name": "4:5 portrait — default for all feed posts"
+    },
+    "square": {
+      "w": 1080,
+      "h": 1080,
+      "name": "1:1 — carousels only"
+    },
+    "story": {
+      "w": 1080,
+      "h": 1920,
+      "name": "9:16 — stories and reels covers"
+    },
+    "safe_margin_px": 96,
+    "scale": 2
+  },
+  "voice": {
+    "register": "Calm, precise, quietly confident. Never hype.",
+    "person": "We / your",
+    "sentence_length": "Short. Rarely over 18 words.",
+    "rules": [
+      "Lead with the answer, never with a hook that withholds it.",
+      "Never use fear as a hook. No 'shocking', no 'avoid this at all costs', no 'stop doing this'.",
+      "State the limitations of any evidence cited. A null result or a small sample gets said out loud.",
+      "If a claim cannot be verified against primary literature, leave it out.",
+      "Understatement outperforms emphasis.",
+      "Admitting we got something wrong is a feature. Write it plainly when it happens.",
+      "No exclamation marks. No emoji in body copy — a single ✦ divider is the only mark permitted.",
+      "Never say 'transform', 'game-changer', 'unlock', 'elevate', 'dive into', 'in today's world'.",
+      "Never open with 'Looking for...' or 'Did you know'.",
+      "Never use a discount as the primary message.",
+      "Never write review text on behalf of a guest.",
+      "We are a skincare studio, not a spa. Never use the word spa."
+    ],
+    "banned_words": {
+      "_note": "Temperature descriptors are banned in brand copy — they read against the season half the year. Enforced by engine/copy.py, which fails a caption containing any of these.",
+      "temperature": [
+        "heated",
+        "warm",
+        "warmth",
+        "cooling",
+        "cool",
+        "hot",
+        "chilled",
+        "toasty"
+      ],
+      "other": [
+        "spa",
+        "shocking",
+        "game-changer",
+        "transform",
+        "unlock",
+        "elevate"
+      ],
+      "exceptions": [
+        "The body-care device may be described functionally as a 'warm heated bed', and only for expectation management on the Décolleté & Body Care program.",
+        "The floor is referred to only as 'Ondol Floor' or 'Traditional Ondol' — never as a heated floor."
+      ],
+      "exception_phrases": [
+        "warm heated bed",
+        "ondol floor",
+        "traditional ondol"
+      ]
+    },
+    "signature_close": "Barrier first. Repair before actives."
+  },
+  "instagram": {
+    "hashtag_max": 5,
+    "hashtag_default": [
+      "#seoultravel",
+      "#koreaskincare",
+      "#kbeauty",
+      "#hongdae"
+    ],
+    "carousel_max_sentences_per_slide": 3,
+    "reels_plain_language_only": true,
+    "reels_banned_terms": [
+      "TEWL",
+      "stratum corneum",
+      "cytokines",
+      "fibroblasts",
+      "ceramide synthesis",
+      "desquamation"
+    ]
+  },
+  "ornament": {
+    "enabled": true,
+    "opacity": 0.2,
+    "note": "Fine botanical line art in the secondary accent, corner-anchored. Never centered, never behind text."
+  },
+  "surface_by_kind": {
+    "answer": "dark",
+    "ritual": "light",
+    "offer": "dark",
+    "_note": "Which surface each post type renders on when active_palette is 'natural'. Flip a value and re-render to change the grid rhythm; palettes without surfaces ignore this."
+  }
+}

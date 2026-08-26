@@ -1,0 +1,66 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:'Cinzel';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/cinzel-latin-600-normal.woff2')format('woff2');font-weight:600;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/cormorant-garamond-latin-300-normal.woff2')format('woff2');font-weight:300;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/cormorant-garamond-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/cormorant-garamond-latin-300-italic.woff2')format('woff2');font-weight:300;font-style:italic;font-display:block}
+  @font-face{font-family:'Inter';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/inter-latin-300-normal.woff2')format('woff2');font-weight:300;font-display:block}
+  @font-face{font-family:'Inter';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/inter-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:block}
+  :root{
+    --ink:#1E1D1A; --raised:#26241F; --card:#2B2924;
+    --hair:rgba(151,168,145,0.30); --hair-soft:rgba(240,235,225,0.13);
+    --type:#F0EBE1; --dim:#B4AD9F; --faint:#837D71;
+    --accent:#9DAE96; --accent-lt:#BCC9B6; --oak:#B3A184;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;background:#101010}
+  .page{width:1080px;height:1920px;position:relative;overflow:hidden;
+    background:var(--ink);color:var(--type)}
+  .eyebrow{font-family:'Cinzel',serif;font-weight:600;letter-spacing:.4em;
+    text-transform:uppercase;color:var(--accent)}
+  .mark{font-family:'Cinzel',serif;font-weight:600;letter-spacing:.34em;
+    text-transform:uppercase;color:var(--type)}
+  h1,h2{font-family:'Cormorant',serif;font-weight:300;line-height:1.08;letter-spacing:-.008em}
+</style></head><body>
+
+<div class="page" data-document-role="page" data-label="Reels cover — question">
+  <div class="photo"></div>
+  <div class="scrim"></div>
+  <div class="safe">
+    <div class="top"><div class="eyebrow">Questions you may have</div></div>
+    <div class="mid">
+      <h1 class="headline">Does mineral<br>sunscreen really<br>reflect UV?</h1>
+      <div class="rule"></div>
+      <div class="sub">Mostly not. About 4–5% of it does.</div>
+    </div>
+    <div class="bot"><div class="mark">Laurel Studio</div><div class="handle">@aesthetic_laurel</div></div>
+  </div>
+  <div class="grid-crop"></div>
+</div>
+<style>
+  .photo{position:absolute;inset:0;background:linear-gradient(160deg,#38352E,#1B1A17 60%,#121110)}
+  .photo::after{content:'REPLACE WITH PHOTOGRAPH';position:absolute;top:22%;left:50%;
+    transform:translateX(-50%);font-size:20px;letter-spacing:.32em;color:rgba(240,235,225,.18)}
+  .scrim{position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(18,17,16,.55) 0%,rgba(18,17,16,.10) 30%,
+      rgba(18,17,16,.62) 74%,rgba(18,17,16,.92) 100%)}
+  /* Instagram crops reels covers to a 1:1 centre for the grid thumbnail.
+     Everything important is kept inside .mid, which sits in that square. */
+  .grid-crop{position:absolute;left:0;right:0;top:420px;height:1080px;
+    border:1px dashed rgba(157,174,150,.34);pointer-events:none}
+  .grid-crop::after{content:'GRID CROP · 1:1';position:absolute;top:14px;left:18px;
+    font-family:'Inter',sans-serif;font-size:17px;letter-spacing:.24em;color:rgba(157,174,150,.62)}
+  .safe{position:absolute;inset:0;padding:170px 96px 190px;
+    display:flex;flex-direction:column;justify-content:space-between}
+  .eyebrow{font-size:19px}
+  .mid{padding-bottom:60px}
+  .headline{font-size:84px;color:#F4F1EA;max-width:860px;text-shadow:0 2px 26px rgba(0,0,0,.45)}
+  .rule{width:104px;height:1px;background:linear-gradient(90deg,var(--accent),transparent);margin:40px 0}
+  .sub{font-family:'Inter',sans-serif;font-weight:300;font-size:28px;line-height:1.5;
+    color:rgba(244,241,234,.86);max-width:760px}
+  .bot .mark{font-size:24px}
+  .handle{font-size:20px;letter-spacing:.14em;color:rgba(240,235,225,.55);margin-top:12px}
+</style>
+
+</body></html>

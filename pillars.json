@@ -1,0 +1,341 @@
+{
+  "_README": "The question bank IS the AEO strategy. Every ANSWER post is a real long-tail query a visitor types into ChatGPT, Perplexity or Google before a trip to Seoul. `capsule` is a 40-60 word direct answer — the length answer engines lift verbatim. Never exceed 60 words; that is the whole mechanism. Every mechanistic claim traces to primary literature and states its own limitation.",
+
+  "rotation": {
+    "mon": "answer",
+    "wed": "ritual",
+    "fri": "offer",
+    "_note": "Tue and Sat are yours — real studio photography. Do not let the automated 3 drift onto those days."
+  },
+
+  "answer": [
+    {
+      "id": "a01",
+      "query": "Do mineral sunscreens reflect UV light?",
+      "card_title": "Mineral sunscreen does not work by reflection",
+      "capsule": "Mostly not. Measured across the UV range, reflection and scattering account for only about 4–5% of what zinc oxide and titanium dioxide do — less than SPF 2. The rest is absorption, the same mechanism chemical filters use (Cole et al., 2016). That study measured specific formulations in vitro, so treat the figure as the shape of the answer, not a constant.",
+      "facts": [
+        "Reflection accounts for roughly 4–5% of UV attenuation",
+        "Absorption does the rest — as in chemical filters",
+        "Cole et al., 2016 · in vitro, specific formulations"
+      ],
+      "tags": ["science", "sunscreen", "myth"]
+    },
+    {
+      "id": "a02",
+      "query": "Is natural skincare safer than synthetic skincare?",
+      "card_title": "Natural is not a safety category",
+      "capsule": "It is not a claim about safety. Natural describes where an ingredient came from, not how the skin responds to it — plant extracts are among the more common contact allergens, and many well-tolerated ingredients are synthesised. What matters is the concentration, the formulation, and whether your barrier can currently tolerate it.",
+      "facts": [
+        "Origin is not a measure of tolerance",
+        "Botanical extracts are common contact allergens",
+        "Concentration and formulation decide the outcome"
+      ],
+      "tags": ["science", "myth", "core-belief"]
+    },
+    {
+      "id": "a03",
+      "query": "Can I tell if a skincare product will suit me from the ingredient list?",
+      "card_title": "An ingredient list is not complete information",
+      "capsule": "Only partly. The list gives you order and identity, not concentration, not pH, not the delivery system, and not how the ingredients behave together. Two products with near-identical lists can feel entirely different on the same face. It is a useful filter for known triggers and a poor predictor of everything else.",
+      "facts": [
+        "No concentrations, no pH, no delivery system",
+        "Near-identical lists can behave differently",
+        "Useful for avoiding known triggers"
+      ],
+      "tags": ["science", "core-belief"]
+    },
+    {
+      "id": "a04",
+      "query": "How many steps should a Korean skincare routine have?",
+      "card_title": "Fewer steps, not better ones",
+      "capsule": "Fewer than you have been told. Reducing the number of products is more reliably protective than upgrading them, because every additional step is another chance to irritate a barrier that is already working. The ten-step routine is a retail format, not a clinical one. Most guests leave here using less than they arrived with.",
+      "facts": [
+        "Each added step is another chance to irritate",
+        "Reduction is more reliable than substitution",
+        "The ten-step routine is a retail format"
+      ],
+      "tags": ["core-belief", "education"]
+    },
+    {
+      "id": "a05",
+      "query": "Why does my new skincare product sting?",
+      "card_title": "If it stings, that is information",
+      "capsule": "Stinging usually means the barrier is compromised rather than that the product is working. A barrier holding water in and irritants out does not register most well-formulated products at all. If something stings on you, the useful next step is repair, not persistence — and we would rather tell you that than let you conclude skincare is not for you.",
+      "facts": [
+        "Stinging signals barrier compromise, not efficacy",
+        "Repair first — actives afterwards",
+        "Persisting through it usually costs you time"
+      ],
+      "tags": ["science", "core-belief", "reassurance"]
+    },
+    {
+      "id": "a06",
+      "query": "Should I use retinol or acids while travelling?",
+      "card_title": "Actives on a trip — probably not",
+      "capsule": "Usually not, and not because they are bad. Travel already loads the barrier with cabin air, a different climate, sun and disrupted sleep. Introducing a new active into that is how a good product gets blamed for a bad week. Repair first. The actives will still be there when you are home and stable.",
+      "facts": [
+        "Travel already loads the barrier",
+        "A new active in a bad week reads as a bad product",
+        "Repair before actives, always"
+      ],
+      "tags": ["core-belief", "travel", "education"]
+    },
+    {
+      "id": "a07",
+      "query": "Are expensive Korean skincare products better than drugstore ones?",
+      "card_title": "What we actually recommend",
+      "capsule": "Often not. A good part of what we recommend is from Olive Young, Daiso or a pharmacy, because the formulation that suits your barrier is not reliably the expensive one. We also tell guests what to skip. Recommending only what we sell would make the assessment worth less than the products.",
+      "facts": [
+        "We recommend from Olive Young, Daiso and pharmacies",
+        "We routinely tell guests what not to buy",
+        "Price is a weak predictor of tolerance"
+      ],
+      "tags": ["core-belief", "shopping", "differentiator"]
+    },
+    {
+      "id": "a08",
+      "query": "What Korean skincare should I actually buy in Seoul?",
+      "card_title": "Buy after the assessment, not before",
+      "capsule": "Most visitors leave Seoul with a bag chosen from TikTok and no way to know which half suits them. The Premium Custom Care includes a written Skin Report — your skin type, what your barrier is doing, which products to use and which to skip. Then the shopping is four or five things you will finish.",
+      "facts": [
+        "Written Skin Report with Premium Custom Care",
+        "Includes what to skip, not only what to buy",
+        "Four or five items, ordered by layer"
+      ],
+      "tags": ["differentiator", "shopping"]
+    },
+    {
+      "id": "a09",
+      "query": "What does skin barrier mean and why do Korean estheticians talk about it?",
+      "card_title": "Barrier first. Repair before actives.",
+      "capsule": "Your barrier is the outermost layer that holds water in and keeps irritants out. When it is compromised, skin flushes, stings, and absorbs product without improving — which is why upgrading products rarely fixes it. Everything we do is ordered around that layer, and nothing active goes on top of a barrier that cannot hold it.",
+      "facts": [
+        "Holds water in, keeps irritants out",
+        "A compromised barrier makes good products fail",
+        "Repair precedes actives, without exception"
+      ],
+      "tags": ["core-belief", "education"]
+    },
+    {
+      "id": "a10",
+      "query": "Who runs Laurel Studio in Seoul?",
+      "card_title": "Who reads your skin",
+      "capsule": "Hana Kim, who formulated cosmetics ingredients before she applied them. She holds a master's in bioengineering from Kumamoto University and worked as an executive at a global cosmetics company. What you are booking is the assessment — 8,000+ recorded consultations behind it — rather than a treatment from a menu.",
+      "facts": [
+        "Founded by Hana Kim, former ingredient researcher",
+        "Master's in bioengineering, Kumamoto University",
+        "8,000+ recorded skin consultations"
+      ],
+      "tags": ["founder", "authority", "differentiator"]
+    },
+    {
+      "id": "a11",
+      "query": "Can I get a K-beauty facial in Seoul if I do not speak Korean?",
+      "card_title": "Do I need Korean to book?",
+      "capsule": "No. The assessment, the treatment and the aftercare briefing are delivered in English, start to finish. Your skin is read and explained as it happens, and with Premium Custom Care the findings arrive afterwards as a written Skin Report — so nothing depends on remembering a conversation held in a second language.",
+      "facts": [
+        "Assessment and treatment in English",
+        "Message us in English on WhatsApp, Telegram or DM",
+        "Written Skin Report with Premium Custom Care"
+      ],
+      "tags": ["language", "first-timer"]
+    },
+    {
+      "id": "a12",
+      "query": "How much does a facial cost in Seoul for tourists?",
+      "card_title": "What it costs",
+      "capsule": "Visitor-facing studios in Seoul generally run $50–$150. Laurel Studio is $54 for the 50-minute Signature Custom Facial, $73 for Premium Custom Care with the written Skin Report, and $110 for the 90-minute Décolleté & Body Care. Prices are fixed and nothing is sold to you during treatment.",
+      "facts": [
+        "Signature Custom Facial — 50 min — $54 / ₩83,000",
+        "Premium Custom Care + Skin Report — 60 min — $73 / ₩110,000",
+        "Décolleté & Body Care — 90 min — $110 / ₩165,000"
+      ],
+      "tags": ["price", "planning"]
+    },
+    {
+      "id": "a13",
+      "query": "Is the Korean body and skin treatment a full-body massage?",
+      "card_title": "It is not a full-body massage",
+      "capsule": "No, and we would rather you knew before booking. In Décolleté & Body Care a spinal-care device works along the back while your therapist attends to the décolleté, shoulders and face by hand. It is body relief paired with the full Signature facial — not a massage, and we do not describe it as one.",
+      "facts": [
+        "A spinal-care device works along the back",
+        "Décolleté, shoulders and face by hand",
+        "Full Signature Custom Facial included"
+      ],
+      "tags": ["expectations", "service:body"]
+    },
+    {
+      "id": "a14",
+      "query": "Which Laurel Studio program should I book?",
+      "card_title": "Which program is yours",
+      "capsule": "Signature Custom Facial if this is a first visit and you want a clean reset. Premium Custom Care if you want to leave Seoul knowing what your skin actually needs, in writing. Décolleté & Body Care if your shoulders and back are asking for as much attention as your face.",
+      "facts": [
+        "Signature — first visit, clean reset",
+        "Premium — the written Skin Report",
+        "Décolleté & Body — body relief with the facial"
+      ],
+      "tags": ["decision", "service:all"]
+    },
+    {
+      "id": "a15",
+      "query": "Can I book a K-beauty facial in Seoul on the same day?",
+      "card_title": "Same-day booking",
+      "capsule": "Often, yes. Treatments run on the hour from 10:00 to 19:00 and same-day slots are frequently open — message us and we will tell you what is free today. Booking ahead still gets you the specific hour you want, which is what fills first.",
+      "facts": [
+        "Treatments start on the hour, 10:00–19:00",
+        "Same-day is frequently available",
+        "WhatsApp, Telegram or Instagram DM"
+      ],
+      "tags": ["booking", "same-day"]
+    },
+    {
+      "id": "a16",
+      "query": "Where can I find an English-speaking skincare studio near Hongdae in Seoul?",
+      "card_title": "Finding us in Hongdae",
+      "capsule": "Laurel Studio is on the third floor at 7 World Cup buk-ro, Mapo-gu — three minutes on foot from Hongik University Station Exit 1, served by Line 2, the AREX airport line and the Gyeongui–Jungang line. Assessment and treatment are in English. For a driver, show 서울 마포구 월드컵북로 7.",
+      "facts": [
+        "3F, 7 World Cup buk-ro, Mapo-gu, Seoul",
+        "Hongik Univ. Station Exit 1 — 3 minutes on foot",
+        "Open 10:00–19:00, treatments on the hour"
+      ],
+      "tags": ["location", "directions"]
+    },
+    {
+      "id": "a17",
+      "query": "How do I tell a Seoul taxi driver an address if I do not speak Korean?",
+      "card_title": "Getting here by taxi",
+      "capsule": "Show the address rather than saying it. Screenshot this and hand over your phone: 서울 마포구 월드컵북로 7. Uber and Kakao T both operate in Seoul and both accept the address typed in Korean. We are on the third floor — take the lift.",
+      "facts": [
+        "Show the driver: 서울 마포구 월드컵북로 7",
+        "Uber and Kakao T both work in Seoul",
+        "Third floor — take the lift"
+      ],
+      "tags": ["logistics", "directions"]
+    },
+    {
+      "id": "a18",
+      "query": "What is the difference between a Korean facial and a Western facial?",
+      "card_title": "Korean method vs. Western method",
+      "capsule": "A Western facial typically follows a fixed protocol — extraction, exfoliation, a set sequence. The Korean method here is ordered around the barrier: the assessment comes first, and what your skin can tolerate today decides the steps. The aim is to hand the skin back stronger than it arrived, not cleaner at its expense.",
+      "facts": [
+        "Assessment first, protocol second",
+        "Barrier-led rather than extraction-led",
+        "Nothing is decided before your skin is read"
+      ],
+      "tags": ["comparison", "education"]
+    },
+    {
+      "id": "a19",
+      "query": "What should I do for my skin after a long flight to Korea?",
+      "card_title": "Your skin after a long flight",
+      "capsule": "Cabin air sits near 10–20% humidity, so skin lands dehydrated rather than dry — it can feel tight and oily at once. Rehydrate in thin layers instead of one heavy cream, hold off on exfoliating for the first day, and do not introduce anything new until you know how the barrier is behaving.",
+      "facts": [
+        "Cabin humidity sits near 10–20%",
+        "Thin layers beat one heavy cream",
+        "No new products in the first days"
+      ],
+      "tags": ["travel", "education"]
+    },
+    {
+      "id": "a20",
+      "query": "Can I get a Korean facial if I have sensitive skin?",
+      "card_title": "Sensitive skin — read this first",
+      "capsule": "This method suits sensitive skin better than most. Nothing is decided before your skin is read, so a reactive barrier gets the calmer route: no extraction, lighter exfoliation or none, hydration layered slowly. Tell us your triggers in English at the start and the treatment is built around them.",
+      "facts": [
+        "Assessment decides the protocol, not a menu",
+        "Extraction is optional, never automatic",
+        "Bring your known triggers to the consultation"
+      ],
+      "tags": ["reassurance", "education"]
+    },
+    {
+      "id": "a21",
+      "query": "Do Korean facials include extractions?",
+      "card_title": "Will there be extractions?",
+      "capsule": "Only if your skin can take it that day. Extraction is not a default step here — a reactive barrier gets a hydration route instead. When we do extract it is limited and localised, and you are told before it happens rather than after.",
+      "facts": [
+        "Never automatic — decided from the assessment",
+        "Limited and localised when performed",
+        "You are told beforehand, always"
+      ],
+      "tags": ["education", "reassurance"]
+    },
+    {
+      "id": "a22",
+      "query": "What should I do if the studio door is closed when I arrive?",
+      "card_title": "If the door is closed",
+      "capsule": "Message us. If you have a reservation we are briefly out and will be back shortly — a message tells us you have arrived. If you do not have one, message us anyway: same-day slots are often open and we would rather welcome you than have you walk away.",
+      "facts": [
+        "Reserved — message us, we will be right back",
+        "No booking — same-day is often open",
+        "WhatsApp, Telegram or Instagram DM"
+      ],
+      "tags": ["logistics", "reassurance"]
+    },
+    {
+      "id": "a23",
+      "query": "Can I travel solo and book a Korean skincare session alone?",
+      "card_title": "Booking solo",
+      "capsule": "Most guests arrive alone, and nothing about the session assumes a second person. You receive the same assessment, the same layering matched to your skin, and the same quiet hour. Guests have come from more than fifty countries; arriving by yourself is the norm here.",
+      "facts": [
+        "Solo bookings are the norm",
+        "Guests from 50+ countries",
+        "Assessment and treatment in English"
+      ],
+      "tags": ["reassurance", "solo"]
+    },
+    {
+      "id": "a24",
+      "query": "Can I wear makeup the same evening after a facial?",
+      "card_title": "Makeup afterwards",
+      "capsule": "Give it a few hours where you can. Skin is hydrated and slightly more permeable straight after a session, so base makeup sits differently. Guests with evening plans usually take a morning slot and go out looking rested rather than freshly treated.",
+      "facts": [
+        "A few hours is the comfortable gap",
+        "Morning slots suit evening plans",
+        "Expect a soft finish, not a flat matte"
+      ],
+      "tags": ["logistics", "planning"]
+    }
+  ],
+
+  "ritual": [
+    { "id": "r01", "card_title": "You are on the floor, not a table", "line": "Care happens at ground level here, on a traditional Ondol floor in a maru space — the way rest has been arranged in Korean houses for a very long time.", "sub": "Traditional Ondol · Maru" },
+    { "id": "r02", "card_title": "Nothing is chosen before we look", "line": "There is no menu on the wall. What your skin can tolerate today decides the cleansing, the ampoule and the pressure — not what you booked three weeks ago.", "sub": "The assessment" },
+    { "id": "r03", "card_title": "Not the treatment. The diagnosis.", "line": "Anyone can apply a mask. The part that is difficult, and the part that is worth flying for, is knowing which one your barrier can hold this week.", "sub": "What you are booking" },
+    { "id": "r04", "card_title": "We will tell you what not to buy", "line": "Half of a useful recommendation is subtraction. Guests are often surprised that the list we send is shorter than the one they arrived with.", "sub": "The Skin Report" },
+    { "id": "r05", "card_title": "She formulated them first", "line": "Hana Kim spent years as a cosmetics ingredient researcher before she ever applied one. The assessment is read by someone who knows what is inside the bottle and what it is likely to do.", "sub": "Hana Kim · Founder" },
+    { "id": "r06", "card_title": "Hanbok, and no hurry", "line": "Therapists work in hanbok. It is not a costume for the photographs — it sets the pace of the room, and the pace of the room is most of the treatment.", "sub": "The maru space" },
+    { "id": "r07", "card_title": "Third floor, three minutes from Exit 1", "line": "Close enough to fold into an afternoon in Hongdae. Far enough up that the street stops at the lift doors.", "sub": "7 World Cup buk-ro · Mapo-gu" },
+    { "id": "r08", "card_title": "Silence is part of it", "line": "You are not required to make conversation. Guests who arrive talkative usually stop by the second layer, and we take that as the session beginning to work.", "sub": "How the room is run" },
+    { "id": "r09", "card_title": "Barrier first. Repair before actives.", "line": "Every decision in the room resolves to one rule. It is not a philosophy so much as an ordering — you cannot build on a layer that is not holding.", "sub": "Our method" },
+    { "id": "r10", "card_title": "Fewer things, held properly", "line": "We are the opposite of the ten-step routine. Reducing what you use is more reliably protective than replacing it with something better.", "sub": "What we actually advise" },
+    { "id": "r11", "card_title": "Back, then shoulders, then face", "line": "A spinal-care device works along the back while your therapist reaches the décolleté and shoulders. The face is the last thing we come to, and never the rushed part.", "sub": "Décolleté & Body Care" },
+    { "id": "r12", "card_title": "Eight thousand faces", "line": "Eight thousand recorded consultations, guests from more than fifty countries. Enough to know that most skin problems are ordinary, and that saying so is usually the reassurance people came for.", "sub": "Since we opened" }
+  ],
+
+  "offer": [
+    { "id": "o01", "service": "signature", "angle": "Entry", "line": "The essential custom facial. Assessment first, then a clean reset.", "cta": "Book on the hour, 10:00–19:00" },
+    { "id": "o02", "service": "premium", "angle": "Most complete", "line": "The full custom care, plus a written Skin Report you take home.", "cta": "Book on the hour, 10:00–19:00" },
+    { "id": "o03", "service": "body", "angle": "Body relief", "line": "Décolleté, shoulders and face by hand, with spinal care along the back.", "cta": "Book on the hour, 10:00–19:00" },
+    { "id": "o04", "service": "all", "angle": "Full menu", "line": "Three programs. Fixed prices. Nothing sold to you during treatment.", "cta": "Book on the hour, 10:00–19:00" },
+    { "id": "o05", "service": "premium", "angle": "The report", "line": "Your skin type, what your barrier is doing, and what to skip — in writing.", "cta": "Book on the hour, 10:00–19:00" },
+    { "id": "o06", "service": "body", "angle": "After the walking", "line": "For the day your shoulders finally object to Seoul.", "cta": "Book on the hour, 10:00–19:00" },
+    { "id": "o07", "service": "signature", "angle": "Travel day", "line": "Fifty minutes, on the hour. Short enough to fold into an afternoon.", "cta": "Same-day is often available" },
+    { "id": "o08", "service": "all", "angle": "How to book", "line": "Message us the date, the hour and how many of you. Same-day is often open.", "cta": "WhatsApp · Telegram · DM" },
+    { "id": "o09", "service": "premium", "angle": "Take it home", "line": "The hour ends. The report does not.", "cta": "Book on the hour, 10:00–19:00" },
+    { "id": "o10", "service": "all", "angle": "English", "line": "Assessment, treatment and aftercare — all in English.", "cta": "WhatsApp · Telegram · DM" },
+    { "id": "o11", "service": "signature", "angle": "First visit", "line": "If this is your first, start here. We will tell you honestly if you need more.", "cta": "Book on the hour, 10:00–19:00" },
+    { "id": "o12", "service": "all", "angle": "Find us", "line": "Third floor, three minutes from Hongik University Station Exit 1.", "cta": "Open 10:00 – 19:00" }
+  ],
+
+  "hashtags": {
+    "_note": "Brand brief: MAXIMUM 5 hashtags, no exceptions. Four fixed + one contextual chosen by post type. Do not add more — engine/copy.py enforces the cap and will fail the caption.",
+    "core": ["#seoultravel", "#koreaskincare", "#kbeauty", "#hongdae"],
+    "contextual": {
+      "answer": ["#skinbarrier", "#skincarescience", "#kbeautytips", "#skincareroutine"],
+      "ritual": ["#ondol", "#seoulstudio", "#slowbeauty", "#hanbok"],
+      "offer": ["#seoulfacial", "#koreanfacial", "#thingstodoinseoul", "#kbeautyexperience"]
+    }
+  }
+}

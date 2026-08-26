@@ -1,0 +1,58 @@
+name: Laurel Studio — auto publish
+
+on:
+  schedule:
+    # UTC. 00:00 UTC = 09:00 KST. Mon / Wed / Fri.
+    - cron: "0 0 * * 1,3,5"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the caption, publish nothing"
+        type: boolean
+        default: true
+      catch_up:
+        description: "Also publish overdue posts"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write        # only to commit queue.json after a successful publish
+
+concurrency:
+  group: laurel-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # Cards are already committed under docs/media, so no browser is needed
+      # at publish time. Only the two small pure-python deps.
+      - run: pip install -r requirements.txt
+
+      - name: Publish
+        env:
+          IG_USER_ID:        ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ID:        ${{ secrets.FB_PAGE_ID }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          PAGES_BASE_URL:    ${{ vars.PAGES_BASE_URL }}
+        run: |
+          python -m engine.run \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }} \
+            ${{ github.event.inputs.catch_up == 'true' && '--catch-up' || '' }}
+
+      - name: Record what went out
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name  "laurel-bot"
+          git config user.email "laurel-bot@users.noreply.github.com"
+          git add content/queue.json content/log.jsonl || true
+          git diff --staged --quiet || git commit -m "published $(date -u +%F)"
+          git push

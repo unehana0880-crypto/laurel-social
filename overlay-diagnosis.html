@@ -1,0 +1,67 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:'Cinzel';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/cinzel-latin-600-normal.woff2')format('woff2');font-weight:600;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/cormorant-garamond-latin-300-normal.woff2')format('woff2');font-weight:300;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/cormorant-garamond-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:block}
+  @font-face{font-family:'Cormorant';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/cormorant-garamond-latin-300-italic.woff2')format('woff2');font-weight:300;font-style:italic;font-display:block}
+  @font-face{font-family:'Inter';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/inter-latin-300-normal.woff2')format('woff2');font-weight:300;font-display:block}
+  @font-face{font-family:'Inter';src:url('file:///home/claude/laurel/laurel-social/assets/fonts/inter-latin-400-normal.woff2')format('woff2');font-weight:400;font-display:block}
+  :root{
+    --ink:#1E1D1A; --raised:#26241F; --card:#2B2924;
+    --hair:rgba(151,168,145,0.30); --hair-soft:rgba(240,235,225,0.13);
+    --type:#F0EBE1; --dim:#B4AD9F; --faint:#837D71;
+    --accent:#9DAE96; --accent-lt:#BCC9B6; --oak:#B3A184;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;background:#101010}
+  .page{width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--ink);color:var(--type)}
+  .eyebrow{font-family:'Cinzel',serif;font-weight:600;letter-spacing:.4em;
+    text-transform:uppercase;color:var(--accent)}
+  .mark{font-family:'Cinzel',serif;font-weight:600;letter-spacing:.34em;
+    text-transform:uppercase;color:var(--type)}
+  h1,h2{font-family:'Cormorant',serif;font-weight:300;line-height:1.08;letter-spacing:-.008em}
+</style></head><body>
+
+<div class="page" data-document-role="page" data-label="Photo overlay — positioning">
+  <div class="photo"></div>
+  <div class="scrim"></div>
+  <div class="body">
+    <div class="eyebrow">Laurel Studio</div>
+    <h1 class="headline">Not the treatment.<br>The diagnosis.</h1>
+    <div class="sub">Your skin is read before anything is applied. What it can tolerate today decides the rest.</div>
+  </div>
+  <div class="strip">
+    <div class="mark">Laurel Studio</div>
+    <div class="meta">Hongdae, Seoul<br>English consultation</div>
+  </div>
+</div>
+<style>
+  /* Replace .photo's background with the guest-facing photograph in Canva.
+     Everything below is sized so type stays legible over a mid-tone image. */
+  .photo{position:absolute;inset:0;
+    background:
+      linear-gradient(148deg,#3A3730 0%,#26241F 42%,#161513 100%);}
+  .photo::after{content:'REPLACE WITH PHOTOGRAPH';position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);font-family:'Inter',sans-serif;font-size:22px;
+    letter-spacing:.34em;color:rgba(240,235,225,.20)}
+  .scrim{position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(20,19,17,.62) 0%,rgba(20,19,17,.14) 34%,
+      rgba(20,19,17,.58) 72%,rgba(20,19,17,.88) 100%)}
+  .body{position:absolute;left:96px;right:96px;bottom:230px}
+  .eyebrow{font-size:19px}
+  .headline{font-size:86px;color:#F4F1EA;margin-top:30px;
+    text-shadow:0 2px 24px rgba(0,0,0,.42);max-width:820px}
+  .sub{font-family:'Inter',sans-serif;font-weight:300;font-size:25px;line-height:1.55;
+    color:rgba(244,241,234,.84);margin-top:26px;max-width:720px;
+    text-shadow:0 2px 18px rgba(0,0,0,.4)}
+  .strip{position:absolute;left:96px;right:96px;bottom:88px;
+    display:flex;align-items:flex-end;justify-content:space-between;
+    padding-top:26px;border-top:1px solid rgba(240,235,225,.26)}
+  .mark{font-size:23px}
+  .meta{font-family:'Cinzel',serif;font-size:18px;letter-spacing:.16em;
+    text-transform:uppercase;color:rgba(240,235,225,.62);text-align:right}
+</style>
+
+</body></html>

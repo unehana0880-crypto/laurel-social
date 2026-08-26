@@ -1,0 +1,241 @@
+{
+  "_INSTRUCTIONS": "Paste inside <script type=\"application/ld+json\"> in the <head> of your booking page. Replace TODO values, then validate at validator.schema.org and search.google.com/test/rich-results. The same eight Q&As must ALSO appear as visible text on the page — schema without matching visible text gets discounted. Delete this key before shipping.",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "HealthAndBeautyBusiness",
+        "BeautySalon"
+      ],
+      "@id": "TODO_WEBSITE#business",
+      "name": "Laurel Studio",
+      "alternateName": [
+        "Laurel Studio Seoul",
+        "로렐스튜디오",
+        "aesthetic_laurel"
+      ],
+      "description": "Laurel Studio is a personalized K-beauty skincare studio in Hongdae, Seoul, founded by Hana Kim, a former cosmetics ingredient researcher. Guests receive a skin assessment in English and care matched to their skin on the day, on a traditional Ondol floor. Programs run 50 to 90 minutes.",
+      "slogan": "Not the treatment. The diagnosis.",
+      "url": "TODO_WEBSITE",
+      "image": "TODO_HERO_IMAGE_URL",
+      "logo": "TODO_LOGO_URL",
+      "priceRange": "$54–$110",
+      "currenciesAccepted": "KRW, USD",
+      "paymentAccepted": "Credit Card, Cash, Bank transfer",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7 World Cup buk-ro, 3F",
+        "addressLocality": "Mapo-gu",
+        "addressRegion": "Seoul",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "TODO_LAT",
+        "longitude": "TODO_LNG"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Seoul"
+      },
+      "publicAccess": true,
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ],
+      "knowsLanguage": [
+        "en",
+        "ko"
+      ],
+      "availableLanguage": [
+        {
+          "@type": "Language",
+          "name": "English"
+        },
+        {
+          "@type": "Language",
+          "name": "Korean"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "TODO_WEBSITE#hanakim",
+        "name": "Hana Kim",
+        "jobTitle": "Founder and lead esthetician",
+        "description": "Former cosmetics ingredient researcher and former executive at a global cosmetics company. Holds a master's degree in bioengineering from Kumamoto University.",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Kumamoto University"
+        },
+        "knowsAbout": [
+          "Cosmetic ingredient science",
+          "Skin barrier function",
+          "Korean skincare formulation",
+          "Personalized skin assessment"
+        ]
+      },
+      "employee": {
+        "@id": "TODO_WEBSITE#hanakim"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "200",
+        "_note": "Only publish this if it matches the live Google Business Profile exactly. Mismatched ratings are a manual-action risk. Update reviewCount as it grows; never round up."
+      },
+      "sameAs": [
+        "https://www.instagram.com/aesthetic_laurel/",
+        "TODO_FACEBOOK_PAGE_URL",
+        "TODO_GOOGLE_MAPS_URL",
+        "TODO_NAVER_PLACE_URL",
+        "TODO_BOOKING_URL"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Programs",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "54",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Signature Custom Facial",
+              "serviceType": "Personalized Korean facial treatment",
+              "description": "A 50-minute custom facial. Skin assessment first, then cleansing, light exfoliation, a hydrating gel mask and barrier-focused moisturizing, matched to your skin on the day.",
+              "provider": {
+                "@id": "TODO_WEBSITE#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "73",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Premium Custom Care + Skin Report",
+              "serviceType": "Personalized Korean facial with written skin assessment",
+              "description": "A 60-minute custom facial with a full skin assessment, personalized ampoule and premium mask, extended facial massage, and a written Skin Report emailed afterwards covering skin type, barrier condition and which products to use or skip.",
+              "provider": {
+                "@id": "TODO_WEBSITE#business"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "110",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Décolleté & Body Care",
+              "serviceType": "Korean décolleté, shoulder and facial care",
+              "description": "A 90-minute program. A spinal-care device works along the back while the therapist attends to décolleté, shoulders and face by hand, followed by a sheet mask and the full Signature Custom Facial. This is not a full-body massage.",
+              "provider": {
+                "@id": "TODO_WEBSITE#business"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "TODO_WEBSITE#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do mineral sunscreens reflect UV light?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mostly not. Measured across the UV range, reflection and scattering account for only about 4–5% of what zinc oxide and titanium dioxide do — less than SPF 2. The rest is absorption, the same mechanism chemical filters use (Cole et al., 2016). That study measured specific formulations in vitro, so treat the figure as the shape of the answer, not a constant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is natural skincare safer than synthetic skincare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is not a claim about safety. Natural describes where an ingredient came from, not how the skin responds to it — plant extracts are among the more common contact allergens, and many well-tolerated ingredients are synthesised. What matters is the concentration, the formulation, and whether your barrier can currently tolerate it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I tell if a skincare product will suit me from the ingredient list?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only partly. The list gives you order and identity, not concentration, not pH, not the delivery system, and not how the ingredients behave together. Two products with near-identical lists can feel entirely different on the same face. It is a useful filter for known triggers and a poor predictor of everything else."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many steps should a Korean skincare routine have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fewer than you have been told. Reducing the number of products is more reliably protective than upgrading them, because every additional step is another chance to irritate a barrier that is already working. The ten-step routine is a retail format, not a clinical one. Most guests leave here using less than they arrived with."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does skin barrier mean and why do Korean estheticians talk about it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your barrier is the outermost layer that holds water in and keeps irritants out. When it is compromised, skin flushes, stings, and absorbs product without improving — which is why upgrading products rarely fixes it. Everything we do is ordered around that layer, and nothing active goes on top of a barrier that cannot hold it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a K-beauty facial in Seoul if I do not speak Korean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The assessment, the treatment and the aftercare briefing are delivered in English, start to finish. Your skin is read and explained as it happens, and with Premium Custom Care the findings arrive afterwards as a written Skin Report — so nothing depends on remembering a conversation held in a second language."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a facial cost in Seoul for tourists?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visitor-facing studios in Seoul generally run $50–$150. Laurel Studio is $54 for the 50-minute Signature Custom Facial, $73 for Premium Custom Care with the written Skin Report, and $110 for the 90-minute Décolleté & Body Care. Prices are fixed and nothing is sold to you during treatment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Korean body and skin treatment a full-body massage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and we would rather you knew before booking. In Décolleté & Body Care a spinal-care device works along the back while your therapist attends to the décolleté, shoulders and face by hand. It is body relief paired with the full Signature facial — not a massage, and we do not describe it as one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I book a K-beauty facial in Seoul on the same day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often, yes. Treatments run on the hour from 10:00 to 19:00 and same-day slots are frequently open — message us and we will tell you what is free today. Booking ahead still gets you the specific hour you want, which is what fills first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find an English-speaking skincare studio near Hongdae in Seoul?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Laurel Studio is on the third floor at 7 World Cup buk-ro, Mapo-gu — three minutes on foot from Hongik University Station Exit 1, served by Line 2, the AREX airport line and the Gyeongui–Jungang line. Assessment and treatment are in English. For a driver, show 서울 마포구 월드컵북로 7."
+          }
+        }
+      ]
+    }
+  ]
+}
