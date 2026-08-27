@@ -95,10 +95,16 @@ def main() -> int:
         return 2
 
     if not a.dry_run:
-        left = publish.ig_quota_remaining()
-        if left < len(batch):
-            print(f"Instagram 24h quota exhausted ({left} left) — deferring", file=sys.stderr)
-            return 0
+        # The quota endpoint is a courtesy guard, not a requirement. It is also
+        # fussy about page permissions and returns 190 on setups that publish
+        # perfectly well, so a failure here must never block the actual post.
+        try:
+            left = publish.ig_quota_remaining()
+            if left < len(batch):
+                print(f"Instagram 24h quota exhausted ({left} left) — deferring", file=sys.stderr)
+                return 0
+        except publish.MetaError as e:
+            print(f"  ! quota check unavailable, continuing anyway: {e}", file=sys.stderr)
 
     ok = 0
     for post in batch:
