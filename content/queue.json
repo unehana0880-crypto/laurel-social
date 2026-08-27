@@ -19,7 +19,7 @@
       "date": "2026-08-31",
       "slot": "mon",
       "template": "answer",
-      "status": "failed",
+      "status": "pending",
       "ai_image": false,
       "image": null,
       "targets": [
