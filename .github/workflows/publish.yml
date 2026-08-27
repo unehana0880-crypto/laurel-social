@@ -59,7 +59,9 @@ jobs:
           python -m engine.run $ARGS
 
       - name: Record what went out
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        # always() so a failed publish still commits its log line — otherwise
+        # the reason for the failure is lost with the runner.
+        if: ${{ always() && github.event.inputs.dry_run != 'true' }}
         run: |
           git config user.name  "laurel-bot"
           git config user.email "laurel-bot@users.noreply.github.com"
