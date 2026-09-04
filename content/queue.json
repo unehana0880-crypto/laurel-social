@@ -55,7 +55,7 @@
       "date": "2026-09-04",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "failed",
       "ai_image": false,
       "image": null,
       "targets": [
