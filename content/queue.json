@@ -82,7 +82,7 @@
       "date": "2026-09-07",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "failed",
       "ai_image": false,
       "image": null,
       "targets": [
