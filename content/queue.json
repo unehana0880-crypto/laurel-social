@@ -38,7 +38,7 @@
       "date": "2026-09-11",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-09-04_o01_signature-custom-facial.png",
       "targets": [
