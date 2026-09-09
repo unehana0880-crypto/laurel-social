@@ -21,24 +21,7 @@
       "template": "answer",
       "status": "published",
       "ai_image": false,
-      "image": null,
-      "targets": [
-        "instagram",
-        "facebook"
-      ]
-    },
-    {
-      "id": "r01",
-      "card_title": "You are on the floor, not a table",
-      "line": "Care happens at ground level here, on a traditional Ondol floor in a maru space — the way rest has been arranged in Korean houses for a very long time.",
-      "sub": "Traditional Ondol · Maru",
-      "kind": "ritual",
-      "date": "2026-09-02",
-      "slot": "wed",
-      "template": "ritual",
-      "status": "failed",
-      "ai_image": false,
-      "image": null,
+      "image": "2026-08-31_a01_mineral-sunscreen-does-not-work-by-reflection.png",
       "targets": [
         "instagram",
         "facebook"
@@ -52,12 +35,12 @@
       "cta": "Book on the hour, 10:00–19:00",
       "card_title": "Signature Custom Facial",
       "kind": "offer",
-      "date": "2026-09-04",
+      "date": "2026-09-11",
       "slot": "fri",
       "template": "offer",
-      "status": "failed",
+      "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-04_o01_signature-custom-facial.png",
       "targets": [
         "instagram",
         "facebook"
@@ -79,29 +62,29 @@
         "core-belief"
       ],
       "kind": "answer",
-      "date": "2026-09-07",
+      "date": "2026-09-14",
       "slot": "mon",
       "template": "answer",
-      "status": "failed",
+      "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-07_a02_natural-is-not-a-safety-category.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r02",
-      "card_title": "Nothing is chosen before we look",
-      "line": "There is no menu on the wall. What your skin can tolerate today decides the cleansing, the ampoule and the pressure — not what you booked three weeks ago.",
-      "sub": "The assessment",
+      "id": "r01",
+      "card_title": "You are on the floor, not a table",
+      "line": "Care happens at ground level here, on a traditional Ondol floor in a maru space — the way rest has been arranged in Korean houses for a very long time.",
+      "sub": "Traditional Ondol · Maru",
       "kind": "ritual",
-      "date": "2026-09-09",
+      "date": "2026-09-16",
       "slot": "wed",
       "template": "ritual",
-      "status": "failed",
+      "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-02_r01_you-are-on-the-floor-not-a-table.png",
       "targets": [
         "instagram",
         "facebook"
@@ -115,12 +98,12 @@
       "cta": "Book on the hour, 10:00–19:00",
       "card_title": "Premium Custom Care + Skin Report",
       "kind": "offer",
-      "date": "2026-09-11",
+      "date": "2026-09-18",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-11_o02_premium-custom-care-skin-report.png",
       "targets": [
         "instagram",
         "facebook"
@@ -141,29 +124,29 @@
         "core-belief"
       ],
       "kind": "answer",
-      "date": "2026-09-14",
+      "date": "2026-09-21",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-14_a03_an-ingredient-list-is-not-complete-information.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r03",
-      "card_title": "Not the treatment. The diagnosis.",
-      "line": "Anyone can apply a mask. The part that is difficult, and the part that is worth flying for, is knowing which one your barrier can hold this week.",
-      "sub": "What you are booking",
+      "id": "r02",
+      "card_title": "Nothing is chosen before we look",
+      "line": "There is no menu on the wall. What your skin can tolerate today decides the cleansing, the ampoule and the pressure — not what you booked three weeks ago.",
+      "sub": "The assessment",
       "kind": "ritual",
-      "date": "2026-09-16",
+      "date": "2026-09-23",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-09_r02_nothing-is-chosen-before-we-look.png",
       "targets": [
         "instagram",
         "facebook"
@@ -177,12 +160,12 @@
       "cta": "Book on the hour, 10:00–19:00",
       "card_title": "Décolleté & Body Care",
       "kind": "offer",
-      "date": "2026-09-18",
+      "date": "2026-09-25",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-18_o03_d-collet-body-care.png",
       "targets": [
         "instagram",
         "facebook"
@@ -203,29 +186,29 @@
         "education"
       ],
       "kind": "answer",
-      "date": "2026-09-21",
+      "date": "2026-09-28",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-21_a04_fewer-steps-not-better-ones.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r04",
-      "card_title": "We will tell you what not to buy",
-      "line": "Half of a useful recommendation is subtraction. Guests are often surprised that the list we send is shorter than the one they arrived with.",
-      "sub": "The Skin Report",
+      "id": "r03",
+      "card_title": "Not the treatment. The diagnosis.",
+      "line": "Anyone can apply a mask. The part that is difficult, and the part that is worth flying for, is knowing which one your barrier can hold this week.",
+      "sub": "What you are booking",
       "kind": "ritual",
-      "date": "2026-09-23",
+      "date": "2026-09-30",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-16_r03_not-the-treatment-the-diagnosis.png",
       "targets": [
         "instagram",
         "facebook"
@@ -239,12 +222,12 @@
       "cta": "Book on the hour, 10:00–19:00",
       "card_title": "Full menu",
       "kind": "offer",
-      "date": "2026-09-25",
+      "date": "2026-10-02",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-25_o04_full-menu.png",
       "targets": [
         "instagram",
         "facebook"
@@ -266,29 +249,29 @@
         "reassurance"
       ],
       "kind": "answer",
-      "date": "2026-09-28",
+      "date": "2026-10-05",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-28_a05_if-it-stings-that-is-information.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r05",
-      "card_title": "She formulated them first",
-      "line": "Hana Kim spent years as a cosmetics ingredient researcher before she ever applied one. The assessment is read by someone who knows what is inside the bottle and what it is likely to do.",
-      "sub": "Hana Kim · Founder",
+      "id": "r04",
+      "card_title": "We will tell you what not to buy",
+      "line": "Half of a useful recommendation is subtraction. Guests are often surprised that the list we send is shorter than the one they arrived with.",
+      "sub": "The Skin Report",
       "kind": "ritual",
-      "date": "2026-09-30",
+      "date": "2026-10-07",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-23_r04_we-will-tell-you-what-not-to-buy.png",
       "targets": [
         "instagram",
         "facebook"
@@ -302,12 +285,12 @@
       "cta": "Book on the hour, 10:00–19:00",
       "card_title": "Premium Custom Care + Skin Report",
       "kind": "offer",
-      "date": "2026-10-02",
+      "date": "2026-10-09",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-02_o05_premium-custom-care-skin-report.png",
       "targets": [
         "instagram",
         "facebook"
@@ -329,29 +312,29 @@
         "education"
       ],
       "kind": "answer",
-      "date": "2026-10-05",
+      "date": "2026-10-12",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-05_a06_actives-on-a-trip-probably-not.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r06",
-      "card_title": "Hanbok, and no hurry",
-      "line": "Therapists work in hanbok. It is not a costume for the photographs — it sets the pace of the room, and the pace of the room is most of the treatment.",
-      "sub": "The maru space",
+      "id": "r05",
+      "card_title": "She formulated them first",
+      "line": "Hana Kim spent years as a cosmetics ingredient researcher before she ever applied one. The assessment is read by someone who knows what is inside the bottle and what it is likely to do.",
+      "sub": "Hana Kim · Founder",
       "kind": "ritual",
-      "date": "2026-10-07",
+      "date": "2026-10-14",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-09-30_r05_she-formulated-them-first.png",
       "targets": [
         "instagram",
         "facebook"
@@ -365,12 +348,12 @@
       "cta": "Book on the hour, 10:00–19:00",
       "card_title": "Décolleté & Body Care",
       "kind": "offer",
-      "date": "2026-10-09",
+      "date": "2026-10-16",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-09_o06_d-collet-body-care.png",
       "targets": [
         "instagram",
         "facebook"
@@ -392,29 +375,29 @@
         "differentiator"
       ],
       "kind": "answer",
-      "date": "2026-10-12",
+      "date": "2026-10-19",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-12_a07_what-we-actually-recommend.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r07",
-      "card_title": "Third floor, three minutes from Exit 1",
-      "line": "Close enough to fold into an afternoon in Hongdae. Far enough up that the street stops at the lift doors.",
-      "sub": "7 World Cup buk-ro · Mapo-gu",
+      "id": "r06",
+      "card_title": "Hanbok, and no hurry",
+      "line": "Therapists work in hanbok. It is not a costume for the photographs — it sets the pace of the room, and the pace of the room is most of the treatment.",
+      "sub": "The maru space",
       "kind": "ritual",
-      "date": "2026-10-14",
+      "date": "2026-10-21",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-07_r06_hanbok-and-no-hurry.png",
       "targets": [
         "instagram",
         "facebook"
@@ -428,12 +411,12 @@
       "cta": "Same-day is often available",
       "card_title": "Signature Custom Facial",
       "kind": "offer",
-      "date": "2026-10-16",
+      "date": "2026-10-23",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-16_o07_signature-custom-facial.png",
       "targets": [
         "instagram",
         "facebook"
@@ -454,29 +437,29 @@
         "shopping"
       ],
       "kind": "answer",
-      "date": "2026-10-19",
+      "date": "2026-10-26",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-19_a08_buy-after-the-assessment-not-before.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r08",
-      "card_title": "Silence is part of it",
-      "line": "You are not required to make conversation. Guests who arrive talkative usually stop by the second layer, and we take that as the session beginning to work.",
-      "sub": "How the room is run",
+      "id": "r07",
+      "card_title": "Third floor, three minutes from Exit 1",
+      "line": "Close enough to fold into an afternoon in Hongdae. Far enough up that the street stops at the lift doors.",
+      "sub": "7 World Cup buk-ro · Mapo-gu",
       "kind": "ritual",
-      "date": "2026-10-21",
+      "date": "2026-10-28",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-14_r07_third-floor-three-minutes-from-exit-1.png",
       "targets": [
         "instagram",
         "facebook"
@@ -490,12 +473,12 @@
       "cta": "WhatsApp · Telegram · DM",
       "card_title": "How to book",
       "kind": "offer",
-      "date": "2026-10-23",
+      "date": "2026-10-30",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-23_o08_how-to-book.png",
       "targets": [
         "instagram",
         "facebook"
@@ -516,29 +499,29 @@
         "education"
       ],
       "kind": "answer",
-      "date": "2026-10-26",
+      "date": "2026-11-02",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-26_a09_barrier-first-repair-before-actives.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r09",
-      "card_title": "Barrier first. Repair before actives.",
-      "line": "Every decision in the room resolves to one rule. It is not a philosophy so much as an ordering — you cannot build on a layer that is not holding.",
-      "sub": "Our method",
+      "id": "r08",
+      "card_title": "Silence is part of it",
+      "line": "You are not required to make conversation. Guests who arrive talkative usually stop by the second layer, and we take that as the session beginning to work.",
+      "sub": "How the room is run",
       "kind": "ritual",
-      "date": "2026-10-28",
+      "date": "2026-11-04",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-21_r08_silence-is-part-of-it.png",
       "targets": [
         "instagram",
         "facebook"
@@ -552,12 +535,12 @@
       "cta": "Book on the hour, 10:00–19:00",
       "card_title": "Premium Custom Care + Skin Report",
       "kind": "offer",
-      "date": "2026-10-30",
+      "date": "2026-11-06",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-30_o09_premium-custom-care-skin-report.png",
       "targets": [
         "instagram",
         "facebook"
@@ -579,29 +562,29 @@
         "differentiator"
       ],
       "kind": "answer",
-      "date": "2026-11-02",
+      "date": "2026-11-09",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-11-02_a10_who-reads-your-skin.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r10",
-      "card_title": "Fewer things, held properly",
-      "line": "We are the opposite of the ten-step routine. Reducing what you use is more reliably protective than replacing it with something better.",
-      "sub": "What we actually advise",
+      "id": "r09",
+      "card_title": "Barrier first. Repair before actives.",
+      "line": "Every decision in the room resolves to one rule. It is not a philosophy so much as an ordering — you cannot build on a layer that is not holding.",
+      "sub": "Our method",
       "kind": "ritual",
-      "date": "2026-11-04",
+      "date": "2026-11-11",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-10-28_r09_barrier-first-repair-before-actives.png",
       "targets": [
         "instagram",
         "facebook"
@@ -615,12 +598,12 @@
       "cta": "WhatsApp · Telegram · DM",
       "card_title": "English",
       "kind": "offer",
-      "date": "2026-11-06",
+      "date": "2026-11-13",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-11-06_o10_english.png",
       "targets": [
         "instagram",
         "facebook"
@@ -641,29 +624,29 @@
         "first-timer"
       ],
       "kind": "answer",
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-11-09_a11_do-i-need-korean-to-book.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r11",
-      "card_title": "Back, then shoulders, then face",
-      "line": "A spinal-care device works along the back while your therapist reaches the décolleté and shoulders. The face is the last thing we come to, and never the rushed part.",
-      "sub": "Décolleté & Body Care",
+      "id": "r10",
+      "card_title": "Fewer things, held properly",
+      "line": "We are the opposite of the ten-step routine. Reducing what you use is more reliably protective than replacing it with something better.",
+      "sub": "What we actually advise",
       "kind": "ritual",
-      "date": "2026-11-11",
+      "date": "2026-11-18",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-11-04_r10_fewer-things-held-properly.png",
       "targets": [
         "instagram",
         "facebook"
@@ -677,12 +660,12 @@
       "cta": "Book on the hour, 10:00–19:00",
       "card_title": "Signature Custom Facial",
       "kind": "offer",
-      "date": "2026-11-13",
+      "date": "2026-11-20",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-11-13_o11_signature-custom-facial.png",
       "targets": [
         "instagram",
         "facebook"
@@ -703,29 +686,29 @@
         "planning"
       ],
       "kind": "answer",
-      "date": "2026-11-16",
+      "date": "2026-11-23",
       "slot": "mon",
       "template": "answer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-11-16_a12_what-it-costs.png",
       "targets": [
         "instagram",
         "facebook"
       ]
     },
     {
-      "id": "r12",
-      "card_title": "Eight thousand faces",
-      "line": "Eight thousand recorded consultations, guests from more than fifty countries. Enough to know that most skin problems are ordinary, and that saying so is usually the reassurance people came for.",
-      "sub": "Since we opened",
+      "id": "r11",
+      "card_title": "Back, then shoulders, then face",
+      "line": "A spinal-care device works along the back while your therapist reaches the décolleté and shoulders. The face is the last thing we come to, and never the rushed part.",
+      "sub": "Décolleté & Body Care",
       "kind": "ritual",
-      "date": "2026-11-18",
+      "date": "2026-11-25",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-11-11_r11_back-then-shoulders-then-face.png",
       "targets": [
         "instagram",
         "facebook"
@@ -739,12 +722,29 @@
       "cta": "Open 10:00 – 19:00",
       "card_title": "Find us",
       "kind": "offer",
-      "date": "2026-11-20",
+      "date": "2026-11-27",
       "slot": "fri",
       "template": "offer",
       "status": "pending",
       "ai_image": false,
-      "image": null,
+      "image": "2026-11-20_o12_find-us.png",
+      "targets": [
+        "instagram",
+        "facebook"
+      ]
+    },
+    {
+      "id": "r12",
+      "card_title": "Eight thousand faces",
+      "line": "Eight thousand recorded consultations, guests from more than fifty countries. Enough to know that most skin problems are ordinary, and that saying so is usually the reassurance people came for.",
+      "sub": "Since we opened",
+      "kind": "ritual",
+      "date": "2026-12-02",
+      "slot": "wed",
+      "template": "ritual",
+      "status": "pending",
+      "ai_image": false,
+      "image": "2026-11-18_r12_eight-thousand-faces.png",
       "targets": [
         "instagram",
         "facebook"
