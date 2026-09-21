@@ -127,7 +127,7 @@
       "date": "2026-09-21",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-09-14_a03_an-ingredient-list-is-not-complete-information.png",
       "targets": [
