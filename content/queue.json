@@ -225,7 +225,7 @@
       "date": "2026-10-02",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-09-25_o04_full-menu.png",
       "targets": [
