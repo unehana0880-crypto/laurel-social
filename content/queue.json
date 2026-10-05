@@ -252,7 +252,7 @@
       "date": "2026-10-05",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-09-28_a05_if-it-stings-that-is-information.png",
       "targets": [
