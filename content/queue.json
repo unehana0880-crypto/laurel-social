@@ -315,7 +315,7 @@
       "date": "2026-10-12",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-10-05_a06_actives-on-a-trip-probably-not.png",
       "targets": [
