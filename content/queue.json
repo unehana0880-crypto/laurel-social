@@ -414,7 +414,7 @@
       "date": "2026-10-23",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-10-16_o07_signature-custom-facial.png",
       "targets": [
