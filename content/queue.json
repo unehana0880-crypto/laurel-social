@@ -476,7 +476,7 @@
       "date": "2026-10-30",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-10-23_o08_how-to-book.png",
       "targets": [
