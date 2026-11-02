@@ -502,7 +502,7 @@
       "date": "2026-11-02",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "skipped",
       "ai_image": false,
       "image": "2026-10-26_a09_barrier-first-repair-before-actives.png",
       "targets": [
@@ -512,16 +512,16 @@
     },
     {
       "id": "r08",
-      "card_title": "Silence is part of it",
-      "line": "You are not required to make conversation. Guests who arrive talkative usually stop by the second layer, and we take that as the session beginning to work.",
-      "sub": "How the room is run",
+      "card_title": "Panthenol, and what it is actually for",
+      "line": "Panthenol is pro-vitamin B5. On skin it becomes pantothenic acid, which helps the barrier hold water. In Seoul's dry winter air that is usually what tightness is: water loss, not a lack of oil. Most of the evidence comes from small trials on irritated or damaged skin, not on healthy skin, so we treat it as support for a barrier under strain rather than a repair claim. In a session it sits in the layering step, before any active.",
+      "sub": "Ingredients",
       "kind": "ritual",
       "date": "2026-11-04",
       "slot": "wed",
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": "2026-10-21_r08_silence-is-part-of-it.png",
+      "image": "2026-11-04_i01_panthenol.png",
       "targets": [
         "instagram",
         "facebook"
@@ -538,7 +538,7 @@
       "date": "2026-11-06",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "skipped",
       "ai_image": false,
       "image": "2026-10-30_o09_premium-custom-care-skin-report.png",
       "targets": [
@@ -565,7 +565,7 @@
       "date": "2026-11-09",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "skipped",
       "ai_image": false,
       "image": "2026-11-02_a10_who-reads-your-skin.png",
       "targets": [
@@ -601,7 +601,7 @@
       "date": "2026-11-13",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "skipped",
       "ai_image": false,
       "image": "2026-11-06_o10_english.png",
       "targets": [
@@ -627,7 +627,7 @@
       "date": "2026-11-16",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "skipped",
       "ai_image": false,
       "image": "2026-11-09_a11_do-i-need-korean-to-book.png",
       "targets": [
@@ -663,7 +663,7 @@
       "date": "2026-11-20",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "skipped",
       "ai_image": false,
       "image": "2026-11-13_o11_signature-custom-facial.png",
       "targets": [
@@ -689,7 +689,7 @@
       "date": "2026-11-23",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "skipped",
       "ai_image": false,
       "image": "2026-11-16_a12_what-it-costs.png",
       "targets": [
@@ -725,7 +725,7 @@
       "date": "2026-11-27",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "skipped",
       "ai_image": false,
       "image": "2026-11-20_o12_find-us.png",
       "targets": [
