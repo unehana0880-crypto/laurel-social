@@ -502,7 +502,7 @@
       "date": "2026-11-02",
       "slot": "mon",
       "template": "answer",
-      "status": "skipped",
+      "status": "pending",
       "ai_image": false,
       "image": "2026-10-26_a09_barrier-first-repair-before-actives.png",
       "targets": [
@@ -538,7 +538,7 @@
       "date": "2026-11-06",
       "slot": "fri",
       "template": "offer",
-      "status": "skipped",
+      "status": "pending",
       "ai_image": false,
       "image": "2026-10-30_o09_premium-custom-care-skin-report.png",
       "targets": [
@@ -565,7 +565,7 @@
       "date": "2026-11-09",
       "slot": "mon",
       "template": "answer",
-      "status": "skipped",
+      "status": "pending",
       "ai_image": false,
       "image": "2026-11-02_a10_who-reads-your-skin.png",
       "targets": [
@@ -601,7 +601,7 @@
       "date": "2026-11-13",
       "slot": "fri",
       "template": "offer",
-      "status": "skipped",
+      "status": "pending",
       "ai_image": false,
       "image": "2026-11-06_o10_english.png",
       "targets": [
@@ -627,7 +627,7 @@
       "date": "2026-11-16",
       "slot": "mon",
       "template": "answer",
-      "status": "skipped",
+      "status": "pending",
       "ai_image": false,
       "image": "2026-11-09_a11_do-i-need-korean-to-book.png",
       "targets": [
@@ -663,7 +663,7 @@
       "date": "2026-11-20",
       "slot": "fri",
       "template": "offer",
-      "status": "skipped",
+      "status": "pending",
       "ai_image": false,
       "image": "2026-11-13_o11_signature-custom-facial.png",
       "targets": [
@@ -689,7 +689,7 @@
       "date": "2026-11-23",
       "slot": "mon",
       "template": "answer",
-      "status": "skipped",
+      "status": "pending",
       "ai_image": false,
       "image": "2026-11-16_a12_what-it-costs.png",
       "targets": [
@@ -725,7 +725,7 @@
       "date": "2026-11-27",
       "slot": "fri",
       "template": "offer",
-      "status": "skipped",
+      "status": "pending",
       "ai_image": false,
       "image": "2026-11-20_o12_find-us.png",
       "targets": [
