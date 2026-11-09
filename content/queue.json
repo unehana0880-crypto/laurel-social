@@ -565,7 +565,7 @@
       "date": "2026-11-09",
       "slot": "mon",
       "template": "answer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-11-02_a10_who-reads-your-skin.png",
       "targets": [
