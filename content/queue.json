@@ -582,9 +582,9 @@
       "date": "2026-11-10",
       "slot": "tue",
       "template": "ritual",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
-     "image": "laurel-w01-card.png",
+      "image": "laurel-w01-card.png",
       "targets": [
         "instagram",
         "facebook"

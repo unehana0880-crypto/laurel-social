@@ -28,3 +28,4 @@
 {"id": "o08", "date": "2026-10-30", "kind": "offer", "image": "2026-10-23_o08_how-to-book.png", "run_at": "2026-10-30T04:39:40.293742+00:00", "ig_media_id": "17864900466694917", "fb_post_id": "122202324344833598", "status": "published"}
 {"id": "r08", "date": "2026-11-04", "kind": "ritual", "image": "2026-11-04_i01_panthenol.png", "run_at": "2026-11-04T05:04:08.900375+00:00", "ig_media_id": "18100159343429603", "fb_post_id": "122203102706833598", "status": "published"}
 {"id": "a10", "date": "2026-11-09", "kind": "answer", "image": "2026-11-02_a10_who-reads-your-skin.png", "run_at": "2026-11-09T04:55:01.916648+00:00", "ig_media_id": "17913114045302767", "fb_post_id": "122203897118833598", "status": "published"}
+{"id": "w01", "date": "2026-11-10", "kind": "ritual", "image": "laurel-w01-card.png", "run_at": "2026-11-10T15:29:31.502034+00:00", "ig_media_id": "18455902096192516", "fb_post_id": "122204074892833598", "status": "published"}
