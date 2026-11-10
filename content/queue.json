@@ -574,6 +574,23 @@
       ]
     },
     {
+      "id": "w01",
+      "card_title": "Winter in Seoul is a lot of walking.",
+      "line": "Fifty minutes on the Ondol Floor, flat on your back, before the rest of the city. No fixed menu — the care is matched to your skin that day.",
+      "sub": "A winter hour",
+      "kind": "ritual",
+      "date": "2026-11-10",
+      "slot": "tue",
+      "template": "ritual",
+      "status": "pending",
+      "ai_image": false,
+      "image": "2026-11-10_w01_winter-in-seoul.png",
+      "targets": [
+        "instagram",
+        "facebook"
+      ]
+    },
+    {
       "id": "r09",
       "card_title": "Barrier first. Repair before actives.",
       "line": "Every decision in the room resolves to one rule. It is not a philosophy so much as an ordering — you cannot build on a layer that is not holding.",
