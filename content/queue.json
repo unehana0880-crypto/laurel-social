@@ -584,7 +584,7 @@
       "template": "ritual",
       "status": "pending",
       "ai_image": false,
-      "image": "w01-winter-card.png",
+     "image": "laurel-w01-card.png",
       "targets": [
         "instagram",
         "facebook"
