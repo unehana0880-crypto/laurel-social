@@ -599,7 +599,7 @@
       "date": "2026-11-11",
       "slot": "wed",
       "template": "ritual",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-10-28_r09_barrier-first-repair-before-actives.png",
       "targets": [
