@@ -618,7 +618,7 @@
       "date": "2026-11-13",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "2026-11-06_o10_english.png",
       "targets": [
