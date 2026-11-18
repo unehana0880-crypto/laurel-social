@@ -71,9 +71,11 @@
 
   .facts{list-style:none;margin-top:{{facts_gap}}px;display:flex;flex-direction:column;
     gap:{{facts_rowgap}}px;max-width:{{measure}}px}
-  .facts li{display:flex;gap:18px;align-items:baseline;
-    font-size:{{facts_px}}px;font-weight:300;color:var(--ivory);line-height:1.44}
-  .facts li b{color:var(--gold);font-weight:400;font-size:19px;flex:none;line-height:1}
+  .facts li{display:flex;gap:18px;align-items:baseline;font-family:{{facts_font|safe}};
+    font-size:{{facts_px}}px;font-weight:{{facts_weight}};color:var(--ivory);
+    line-height:{{facts_lh}};letter-spacing:.002em}
+  .facts li b{color:var(--gold);font-weight:400;font-size:{{facts_bullet}}px;flex:none;
+    line-height:1;position:relative;top:{{facts_bullet_top}}px}
 
   /* ---- offer price line ---- */
   .price{display:flex;align-items:baseline;gap:22px;margin-top:34px;flex-wrap:wrap}
