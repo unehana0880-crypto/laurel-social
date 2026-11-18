@@ -36,18 +36,23 @@ def _ctx(post: dict, biz: dict, br: dict) -> tuple[str, dict]:
         brand_name=biz["entity"]["name"],
         handle=biz["contact"]["instagram_handle"],
         extra_class="", measure=790, quote=76, lede_px=27, h1=72,
+        facts_px=25, facts_gap=44, facts_rowgap=19,
         facts=None, rows=None, sub=None, lede="",
         price=None, price_krw=None, duration=None, note=None,
     )
 
     if kind == "answer":
         title = post["card_title"]
+        # The capsule is already the second block of every caption, so printing
+        # it on the card only buys duplicate text at a size nobody reads in a
+        # feed thumbnail. Card = the question, large. Detail = the caption.
         base.update(
             eyebrow="Questions you may have",
             title=title,
-            h1=_fit(title, 74, 50),
-            lede=post["capsule"],
+            h1=_fit(title, 112, 74),
+            lede="",
             facts=post["facts"],
+            facts_px=38, facts_gap=72, facts_rowgap=30,
             foot_right="English consultation",
         )
         return "answer.html", base
