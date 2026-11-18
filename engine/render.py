@@ -36,7 +36,9 @@ def _ctx(post: dict, biz: dict, br: dict) -> tuple[str, dict]:
         brand_name=biz["entity"]["name"],
         handle=biz["contact"]["instagram_handle"],
         extra_class="", measure=790, quote=76, lede_px=27, h1=72,
-        facts_px=25, facts_gap=44, facts_rowgap=19,
+        facts_px=25, facts_gap=44, facts_rowgap=19, facts_lh=1.44,
+        facts_font="'Inter',sans-serif", facts_weight=300,
+        facts_bullet=19, facts_bullet_top=0,
         facts=None, rows=None, sub=None, lede="",
         price=None, price_krw=None, duration=None, note=None,
     )
@@ -52,7 +54,13 @@ def _ctx(post: dict, biz: dict, br: dict) -> tuple[str, dict]:
             h1=_fit(title, 112, 74),
             lede="",
             facts=post["facts"],
-            facts_px=38, facts_gap=72, facts_rowgap=30,
+            # Key lines are set in the headline's serif, and sized off the
+            # longest of them, so a long price line never breaks mid-figure.
+            facts_font="'Cormorant',serif", facts_weight=400, facts_lh=1.3,
+            facts_px=_fit("x" * max((len(f) for f in post["facts"]), default=0),
+                          42, 34, lo=40, hi=64),
+            facts_gap=56, facts_rowgap=24, facts_bullet=20, facts_bullet_top=-5,
+            measure=900,
             foot_right="English consultation",
         )
         return "answer.html", base
