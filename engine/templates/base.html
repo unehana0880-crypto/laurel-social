@@ -69,10 +69,10 @@
   .lede{font-family:'Inter',sans-serif;font-weight:300;font-size:{{lede_px}}px;
     line-height:1.62;color:var(--dim);max-width:{{measure}}px;letter-spacing:.004em}
 
-  .facts{list-style:none;margin-top:44px;display:flex;flex-direction:column;gap:19px;
-    max-width:{{measure}}px}
+  .facts{list-style:none;margin-top:{{facts_gap}}px;display:flex;flex-direction:column;
+    gap:{{facts_rowgap}}px;max-width:{{measure}}px}
   .facts li{display:flex;gap:18px;align-items:baseline;
-    font-size:25px;font-weight:300;color:var(--ivory);line-height:1.44}
+    font-size:{{facts_px}}px;font-weight:300;color:var(--ivory);line-height:1.44}
   .facts li b{color:var(--gold);font-weight:400;font-size:19px;flex:none;line-height:1}
 
   /* ---- offer price line ---- */
