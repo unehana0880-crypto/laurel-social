@@ -680,7 +680,7 @@
       "date": "2026-11-20",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "laurel_03_bed-lamp_1.png",
       "targets": [
