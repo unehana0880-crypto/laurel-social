@@ -751,6 +751,32 @@
       ]
     },
     {
+      "id": "a13",
+      "query": "Does my skincare need to change in autumn in Korea?",
+      "card_title": "What autumn does",
+      "capsule": "Seoul's autumn air is drier than the summer you packed for, and the first thing it takes is water, not oil. Skin that behaved all summer can feel tight here within a day of landing. We repair the barrier first and leave the actives until it holds.",
+      "facts": [
+        "Barrier repair before actives",
+        "The assessment reads hydration, not just oil",
+        "Aftercare adjusted to the weather you are travelling in"
+      ],
+      "tags": [
+        "seasonal",
+        "barrier"
+      ],
+      "kind": "answer",
+      "date": "2026-11-30",
+      "slot": "mon",
+      "template": "answer",
+      "status": "pending",
+      "ai_image": false,
+      "image": "laurel_season_ginkgo.jpg",
+      "targets": [
+        "instagram",
+        "facebook"
+      ]
+    },
+    {
       "id": "r12",
       "card_title": "Eight thousand faces",
       "line": "Eight thousand recorded consultations, guests from more than fifty countries. Enough to know that most skin problems are ordinary, and that saying so is usually the reassurance people came for.",
@@ -762,6 +788,87 @@
       "status": "pending",
       "ai_image": false,
       "image": "laurel_08_tangerines_1.png",
+      "targets": [
+        "instagram",
+        "facebook"
+      ]
+    },
+    {
+      "id": "o13",
+      "service": "signature",
+      "angle": "Winter skin",
+      "line": "The first cold week is usually when travelling skin gives up. Fifty minutes, read and treated for what the weather is actually doing to it.",
+      "cta": "Book on the hour, 10:00-19:00",
+      "card_title": "Signature Custom Facial",
+      "kind": "offer",
+      "date": "2026-12-04",
+      "slot": "fri",
+      "template": "offer",
+      "status": "pending",
+      "ai_image": false,
+      "image": "laurel_season_firstsnow.jpg",
+      "targets": [
+        "instagram",
+        "facebook"
+      ]
+    },
+    {
+      "id": "a14",
+      "query": "Is camellia oil good for dry skin?",
+      "card_title": "Why camellia",
+      "capsule": "Camellia seed oil is high in oleic acid, close to what skin already makes, so it spreads thin and stays put instead of sitting on top. It is an occlusive step, not a hydrating one — it holds water in that something else has to put there first. We use it once the barrier is already repaired.",
+      "facts": [
+        "Oleic-acid rich, close to skin's own lipids",
+        "Seals water in — it does not add it",
+        "Used after hydration, not instead of it"
+      ],
+      "tags": [
+        "ingredients",
+        "dry-skin"
+      ],
+      "kind": "answer",
+      "date": "2026-12-07",
+      "slot": "mon",
+      "template": "answer",
+      "status": "pending",
+      "ai_image": false,
+      "image": "laurel_season_camellia.jpg",
+      "targets": [
+        "instagram",
+        "facebook"
+      ]
+    },
+    {
+      "id": "r13",
+      "card_title": "What the room smells like",
+      "line": "Cypress, faintly, and nothing else. No music with a beat, no scent that announces itself. You are on the floor under a quilt, and the loudest thing in the room is the heater.",
+      "sub": "The treatment room",
+      "kind": "ritual",
+      "date": "2026-12-09",
+      "slot": "wed",
+      "template": "ritual",
+      "status": "pending",
+      "ai_image": false,
+      "image": "laurel_season_pine.jpg",
+      "targets": [
+        "instagram",
+        "facebook"
+      ]
+    },
+    {
+      "id": "o14",
+      "service": "body",
+      "angle": "Evening primrose",
+      "line": "The oil we work with on the body is evening primrose, made in Korea. It is mostly linoleic acid — the same fatty acid your skin builds its own barrier lipids from — with a little GLA alongside it, which is why it reads as replenishing rather than sealing. Ninety minutes: décolleté, shoulders and face by hand, with spinal care along the back.",
+      "cta": "Book on the hour, 10:00–19:00",
+      "card_title": "Décolleté & Body Care",
+      "kind": "offer",
+      "date": "2026-12-11",
+      "slot": "fri",
+      "template": "offer",
+      "status": "pending",
+      "ai_image": false,
+      "image": "laurel_season_moonflower.jpg",
       "targets": [
         "instagram",
         "facebook"
