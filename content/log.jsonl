@@ -36,3 +36,4 @@
 {"id": "r10", "date": "2026-11-18", "kind": "ritual", "image": "laurel_06_lamp-ampoules_1.png", "run_at": "2026-11-18T17:28:18.006375+00:00", "ig_media_id": "18651025054024691", "fb_post_id": "122205168242833598", "status": "published"}
 {"id": "o11", "date": "2026-11-20", "kind": "offer", "image": "laurel_03_bed-lamp_1.png", "run_at": "2026-11-20T05:57:14.320712+00:00", "ig_media_id": "18125373455282250", "fb_post_id": "122205382976833598", "status": "published"}
 {"id": "a12", "date": "2026-11-23", "kind": "answer", "image": "2026-11-19b_a12_what-it-costs.png", "run_at": "2026-11-23T06:01:41.842198+00:00", "ig_media_id": "18122993008755509", "fb_post_id": "122205769718833598", "status": "published"}
+{"id": "r11", "date": "2026-11-25", "kind": "ritual", "image": "laurel_05_floor-bedding_1.png", "run_at": "2026-11-25T07:16:03.471761+00:00", "ig_media_id": "17957515533287707", "fb_post_id": "122206029788833598", "status": "published"}
