@@ -742,7 +742,7 @@
       "date": "2026-11-27",
       "slot": "fri",
       "template": "offer",
-      "status": "pending",
+      "status": "published",
       "ai_image": false,
       "image": "laurel_10_entrance_1.png",
       "targets": [
